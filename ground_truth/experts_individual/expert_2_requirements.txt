@@ -1,0 +1,48 @@
+1. The system must allow team managers or owners to submit valid documents for team registration, which the IFA can approve, enabling the management of team resources such as players, coaches, and stadiums.
+2. The system must allow general users to register to have an account on the platform.
+3. The system must allow the IFA to appoint and register referees.
+
+4. The system must allow teams to register their own page on which post team information.
+5. The system must allow players to register their own page in which post their own information.
+
+6. The system must have a budgeting portal to allow teams to manage income and expenses.
+7. The system must have a budgeting portal to allow teams to monitor income and expenses.
+
+8. The system must allow the IFA financial team to specify policies for spending money.
+9. The system must allow the IFA financial team to access the financial data of the teams.
+
+10. The system must allow team referees to post events on a game.
+11. The system must allow team referees to modify information about an event.
+12. The system must allow any user (also not registered to the platform) to see the information of events posted.
+13. The system must allow any user (also not registered to the platform) to download the 14. information of events posted.
+
+15. The system must automatically schedule the games in a season according to some policy.
+
+16. The system must allow the IFA representative to schedule games.
+The system must allow the IFA representative to reschedule games.
+
+17. The system must allow the IFA representative to define a set of policies to guide the 18. scheduling of games in a season.
+19. The system must allow the IFA representative to define a set of policies to guide the assignments of referees to games.
+20. The system must allow the IFA representative to approve a schedule proposal of another IFA representative.
+
+21. The system must show the status of a game.
+
+22. The system must allow a referee to participate in a scheduled game.
+23. The system must allocate a referee to different games in the same season.
+24. The system must allocate all the referees to the same amount of games.
+
+25. The system must allow fans to register for the news of their favorite players.
+26. The system must allow fans to register for the news of their favorite teams.
+27. The system must send notifications to the fans based on their registrations.
+
+28. The system must allow teams to register events.
+29. The system must allow the IFA administrator to set policies on notifications.
+30. The system must send notifications and reminders on the game starts.
+
+31. The system must maintain archives of past season schedules.
+32. The system must allow the IFA to define leagues and seasons.
+
+33. The system must have two separate interfaces for users: one for the fans and the other for the other actors.
+34. The system must allow to access at least 50000 people.
+35. The system must respond very fast (approximately 2 seconds) to all actors except referees which should access faster.
+36. The system must encrypt financial and budget data.

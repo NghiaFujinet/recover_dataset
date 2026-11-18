@@ -1,0 +1,104 @@
+1. The system must allow the IFA to specify budget policies.
+2. The system must have the ability to alert users of certain budget policy violations.
+3. The system must support income tracking from ticket sales for specific games.
+4. The system must support income tracking from the sale of players.
+5. The system must support income tracking from the sale of properties such as small stadiums.
+6. The system must support expense tracking for salaries of players and various roles within the team.
+7. The system must support expense tracking for maintenance of stadiums.
+8. The system must allow each team to manage its own budget independently.
+9. The system must enable the IFA to control and monitor the balance of each team's budget.
+10. The system must support the IFA in conducting audits.
+11. The system must allow the IFA to set regulation rules and policies.
+11. The system must allow the financial team to access financial data for teams and clubs.
+12. The system must enable the IFA administrative team to view diverse transactions.
+13. The system must automate the generation of financial reports.
+14. The system must provide financial reports more frequently than once a year.
+15. The system must allow the IFA and teams to generate financial reports at specific intervals such as daily, weekly, and monthly.
+16. The system must schedule automatic generation of financial reports on a predefined daily, weekly, and monthly basis.
+17. The system must support the generation of on-demand financial reports, allowing users to view real-time data for ongoing monitoring.
+18. The system must update financial data in real-time as transactions are recorded, accessible to authorized users such as the IFA administration and team managers.
+19. The system must support the aggregation of financial data for auditing purposes.
+20. The system must allow the IFA administrative team and teams to access the budgeting system.
+21. The system must support the submission of reports from various roles such as referees and team captains.
+22. The system must allow referees to insert events that occurred during the game in real-time using their mobile phones.
+23. The system must restrict the ability to update game events to referees only.
+24. The system must record each event with a timestamp, the event itself, and any additional required information.
+25. The system must allow everyone, including guests, to view the detailed game data.
+26. The system must support the export of game data for external use, such as by journalists or the press.
+27. The system must allow team managers to report new players joining the team.
+28. The system must allow team managers to report players leaving the team.
+29. The system must allow team managers to report the number of events and losses in tournaments.
+30. The system must allow team administration to query and perform offline analysis on their data.
+31. The system must restrict budget transaction insertion and item management to the respective teams.
+32. The system must allow the IFA to view the entire monetary information of all teams.
+33. The system must allow the IFA to monitor, alert, and request details for adjustments on monetary information but not perform operations over the data.
+34. The system must allow the definition of scheduling policies for games.
+35. The system must support scheduling games such that each pair of teams plays once in each team's stadium.
+36. The system must allow setting a minimal time interval between matches of the same pair of teams.
+37. The system must allow setting the specific day of the week for competitions.
+38. The system must consider various constraints when executing the scheduling algorithm.
+39. The system must provide guidance for allocating referees to games.
+40. The system must ensure that the same referee does not participate in multiple games involving the same teams.
+41. The system must ensure that all referees participate in an equal number of games.
+42. The system must allow referees to input their availability and preferences for scheduling.
+43. The system must allow manual adjustment of the schedule in case of game cancellations or other exceptional circumstances.
+44. The system must require an explanation and approval from a second IFA representative for any manual changes to the schedule.
+45. The system must allow the IFA representative to override the automatic scheduling results with a rationale for the change.
+46. The system must ensure transparency and bias prevention by requiring a second reviewer to confirm any schedule changes.
+47. The system must allow defining a minimum number of days gap between games for the same team.
+48. The system must allow defining the number of days gap as a parameter in the scheduling policy.
+49. The system must ensure that the number of days gap between games is at least the number of teams multiplied by two days.
+50. The system must allow fans to register for notifications about specific games.
+51. The system must allow fans to register for notifications about specific players.
+52. The system must send notifications to fans when the schedule of a registered game changes.
+53. The system must send notifications to fans when a registered player posts a message.
+54. The system must have a section where fans can follow players or teams and get notifications.
+55. The system must have a live update section where fans can see posts from referees and live scores.
+56. The system must have a section displaying overall tournament scores and team rankings.
+57. The system must send notifications to fans about game events such as player replacements reported by referees.
+58. The system must support app notifications for users.
+59. The system must not support email notifications or direct messages.
+60. The system must provide a web-based application for administrative and team use.
+61. The system must provide a mobile application for referees and fans.
+62. The system must have different interfaces for different user roles while maintaining a unified system.
+63. The system must ensure that only referees can update game events to maintain data coherence and reliability.
+64. The system must expose game data to fans through the system, eliminating the need for external news portals.
+65. The system must allow fans to initiate communication.
+66. The system must enable fans to register for specific information they are interested in.
+67. The system must push information to fans based on their registered interests.
+68. The system must incorporate automatic reminders for team managers to submit reports to the IFA once a year.
+69. The system must allow users to specify custom alerts, such as reminders five minutes before a game starts.
+70. The system must support simultaneous access by 50,000 users and must ensure a response time of one to two seconds for general users and ensure immediate real-time updates for referees.
+71. The system must ensure a response time of one to two seconds for fans, IFA administrative, and team administration.
+72. The system must prioritize real-time responsiveness for referees during a game.
+73. The system must support immediate real-time updates for referees.
+74. The system must allow two-way communication with referees for real-time updates.
+75. The system must support live recording features for referees (potential future version).
+76. The system must allow the IFA to outsource the entire development and maintenance to an external company.
+77. The system must facilitate communication between the software development team and the IFA through the IFA's IT department.
+78. The system must ensure that all storage and computing are handled by an external cloud service provider.
+79. The system must comply with local regulations regarding data storage, including restrictions on storing data outside certain countries.
+80. The system must support localization in terms of language, currency, and time zone.
+81. The system must allow the IT team to decide what data goes inside and what goes into the cloud.
+82. The system must encrypt budget data to avoid leakage.
+83. The system must allow players to update their social network page.
+84. The system must allow players to manage their communication with fans.
+85. The system must ensure that players do not have access to the budgeting interface.
+86. The system must support the registration of teams, setting the league, setting the season, and registering referees and fans in the first phase.
+87. The system must include budgetary and scheduling features in the second phase.
+88. The system must allow referees to update game information in real-time in the third phase.
+89. The system must allow the IFA to define the league.
+90. The system must allow the IFA to define the season.
+91. The system must allow the IFA to appoint referees.
+92. The system must allow the IFA to register referees.
+93. The system must allow the IFA to set various policies for the budget.
+94. The system must allow the IFA to set policies for game scheduling.
+95. The system must allow the IFA to set policies for referee scheduling.
+96. The system must allow the IFA to activate policies in certain leagues.
+97. The system must allow the IFA to register teams with valid documents.
+98. The system must allow team managers to manage team resources such as players, coaches, and stadiums.
+99. The system must keep past season scheduling archives.
+100. The system must allow fans to register to the system via the internet for identification purposes.
+101. The system must allow the IFA to invite referees to be part of the system.
+102. The system must allow team managers to enter player details into the system.
+103. The system must allow the IFA to audit the process of player registration.

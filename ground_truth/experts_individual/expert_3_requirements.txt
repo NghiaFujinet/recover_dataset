@@ -1,0 +1,34 @@
+1. The system must monitor the budget and verify that it is managed correctly by the teams (e.g., without policy violations), and in case of some violations, it can notify the user
+
+2. The system must guarantee access to specific data by multiple users simultaneously with specific permissions
+
+3. The system must give the opportunity to visualize data related to matchs for all users
+
+4. The system must guarantee the possibility for the referee to add in real-time events related to the match by using the smartphone. Each event must have a timestamp
+
+5. The system must guarantee access to data related to the budget for both team manager and the team administration
+
+6. The system must display budget data to the specific team requesting it
+
+7. The system must guarantee the possibility of defining new policies on how to schedule the game
+
+8. The system must have a mechanism for combining the referee with a specific match. The definition of these mechanisms must consider the implemented policies and can be modified only under approvation of one of the IFA representatives.
+
+9. The system must implement a mechanism for notifying users of information about the match
+
+10. The system must implement a notification mechanism whenever a profile that a specific user follow writes a new message
+
+11. The system must guarantee the possibility of registering users (including players) and following other users
+
+12. The system must implemented with multiple infercaces (mobile and website)
+
+13. The system must guarantee access to past archives history
+
+14. The system must provide  automatic notifications for all users who are interested in having specific information about the match
+
+15. The system must communicate with other existing systems
+
+16. The system must load data from external sources 
+
+17. The system must provide a registration form for users and to create a profile
+

@@ -1,0 +1,29 @@
+id,requirement,label,category,source_timestamps
+1,"The system must allow team managers or owners to submit valid documents for team registration, which the IFA can approve, enabling the management of team resources such as players, coaches, and stadiums.",FR,Registration & Team Management,[0:36:30] spk_1 (Line 239)
+2,"The system must allow teams to register their own page on which to post team information, with customization options.",FR,Registration & Fan Portal,"[0:18:57] spk_0, [0:19:24] spk_1 (Lines 123-125)"
+3,"The system must allow general users to register to have an account on the platform, with clear registration steps.",FR,Registration & User Account,"[0:36:09] spk_1, [0:36:25] spk_0 (Lines 235-237)"
+4,"The system must allow players to register their own page on which to post their information, ensuring privacy settings.",FR,Registration & Player Portal,"[0:18:28] spk_1, [0:18:57] spk_0, [0:31:26] spk_1 (Lines 117, 123, 193)"
+5,"The system must have a budgeting portal to allow teams to manage income and expenses, important for financial transparency.",FR,Budgeting Portal,"[0:00:00] spk_0, [0:01:17] spk_1, [0:02:25] spk_1 (Lines 1-7)"
+6,"The system must allow the IFA financial team to specify policies for spending money, including policy update notifications.",FR,Budgeting Policy,"[0:02:44] spk_1, [0:37:20] spk_1 (Lines 11, 243)"
+7,"The system must allow the IFA financial team to access the financial data of the teams securely, with audit trails.",FR,Budgeting Access & Audit,"[0:03:08] spk_2, [0:03:16] spk_1, [0:08:44] spk_1 (Lines 13-15, 59)"
+8,"The system must allow the IFA to appoint and register referees, ensuring a secure verification process.",FR,Referee Management,"[0:37:20] spk_1, [0:38:46] spk_1 (Lines 243, 247)"
+9,"The system must allow referees to post events on a game in real-time, with a mobile interface.",FR,Game Event Reporting,[0:05:04] spk_1 (Line 35)
+10,The system must ensure that only referees can update game events to maintain data coherence and reliability.,NFR,Data Integrity & Reliability,"[0:05:04] spk_1, [0:22:16] spk_1 (Lines 35, 143)"
+11,"The system must automatically schedule the games in a season according to predefined policies, including a conflict resolution mechanism.",FR,Match Scheduling,"[0:09:39] spk_1, [0:15:32] spk_1 (Lines 63, 93)"
+12,"The system must allow the IFA representative to schedule and reschedule games, with an interface for scheduling and ensuring notifications for changes.",FR,Match Rescheduling,"[0:13:27] spk_1, [0:14:07] spk_1, [0:17:25] spk_1 (Lines 83-93, 113)"
+13,"The system must allow the IFA representative to define policies to guide the scheduling of games and the assignments of referees to games, ensuring fairness in assignments.",FR,Scheduling & Referee Policy,"[0:09:39] spk_1, [0:11:24] spk_1, [0:12:29] spk_1 (Lines 63, 67-71)"
+14,"The system must allow fans to register for notifications about their favorite players and teams, with customizable notification preferences.",FR,Fan Subscriptions,"[0:18:28] spk_1, [0:19:29] spk_0, [0:24:49] spk_1 (Lines 117, 127, 157)"
+15,"The system must send notifications to fans based on their registrations, ensuring timely delivery.",FR,Fan Notifications,"[0:17:25] spk_1, [0:20:08] spk_1, [0:23:42] spk_1 (Lines 113, 129, 153)"
+16,"The system must provide automatic notifications for users interested in specific match information, with user preferences management.",FR,Match Notifications,"[0:17:25] spk_1, [0:20:08] spk_1, [0:24:49] spk_1 (Lines 113, 129, 157)"
+17,"The system must allow any user (also not registered to the platform) to see and download information about events posted, ensuring public access is read-only and including data export formats.",FR,Public Data Access & Export,"[0:06:35] spk_1, [0:07:12] spk_2, [0:07:20] spk_1 (Lines 43-47)"
+18,The system must encrypt financial and budget data to comply with security standards and prevent data leakage.,NFR,Security & Encryption,[0:30:14] spk_1 (Line 187)
+19,"The system must maintain archives of past season schedules, ensuring they are searchable.",FR,Schedule Archives,"[0:37:03] spk_0, [0:37:20] spk_1 (Lines 241-243)"
+20,"The system must allow the IFA and teams to generate financial reports at specific intervals and on-demand, providing real-time data for ongoing monitoring.",FR,Financial Reporting,"[0:02:25] spk_1, [0:03:26] spk_1, [0:07:55] spk_1 (Lines 7, 19, 51)"
+21,"The system must allow access to at least 50000 users, ensuring scalability.",NFR,Scalability & Capacity,"[0:25:20] spk_2, [0:25:37] spk_1 (Lines 159-161)"
+22,"The system must respond very fast (approximately 2 seconds) to all actors except referees, who should have immediate real-time updates during a game.",NFR,Performance & Latency,"[0:25:37] spk_1, [0:26:53] spk_1 (Lines 161, 165)"
+23,"The system must provide a web-based application for administrative and team use, ensuring cross-browser compatibility.",FR,Web Application Interface,[0:20:56] spk_1 (Line 133)
+24,"The system must provide a mobile application for referees and fans, ensuring platform compatibility.",FR,Mobile Application Interface,[0:20:56] spk_1 (Line 133)
+25,The system must support live recording features for referees as a potential future enhancement.,FR,Live Recording (Future),"[0:27:04] spk_0, [0:27:16] spk_1 (Lines 167-171)"
+26,"The system must allow the IFA administrator to set policies on notifications, with a policy management interface.",FR,Notification & Policy Reminders,"[0:24:21] spk_0, [0:24:49] spk_1 (Lines 155-157)"
+27,"The system must allow the IFA to define leagues and seasons, with hierarchical management.",FR,League & Season Management,"[0:32:51] spk_1, [0:37:20] spk_1 (Lines 207, 243)"
+28,"The system must allow team managers to report new players joining or leaving the team, and the number of events and losses in tournaments.",FR,Team Roster & Tournament Report,"[0:07:23] spk_0, [0:38:46] spk_1 (Lines 49, 247)"
