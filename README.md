@@ -2,7 +2,8 @@
 
 Bộ dữ liệu chuẩn (Benchmark Dataset) cho bài toán **Trích xuất Yêu cầu Hệ thống Tự động từ Hội thoại (Conversational Requirements Elicitation)**, được cấu trúc lại từ nghiên cứu **RECOVER** (*Requirements EliCitation frOm conVERsations*: *"RECOVER: Toward the Automatic Requirements Generation from Stakeholders’ Conversations"*).
 
-* **Nguồn dữ liệu gốc (Original Online Appendix / Figshare)**: https://figshare.com/s/46661b70336a46d66ac8
+* **Nguồn dữ liệu gốc 1 — RECOVER (Figshare)**: https://figshare.com/s/46661b70336a46d66ac8
+* **Nguồn dữ liệu gốc 2 — Inter2US / User Stories (Zenodo)**: https://zenodo.org/records/20596692
 
 ---
 
@@ -21,9 +22,13 @@ Recover_dataset/
 │   │   ├── expert_2_requirements.txt                   # 36 câu requirements của Chuyên gia 2 (mức trung bình)
 │   │   ├── expert_3_requirements.txt                   # 17 câu requirements của Chuyên gia 3 (mức khái quát)
 │   │   └── experts_delphi_execution.xlsx               # Bảng đối chiếu & gộp Delphi (Initial Set 40 câu -> Final Set 28 câu)
-│   └── turn_level/                                     # Ground truth ở cấp độ từng lượt lời (Turn-level Oracles)
-│       ├── RQ1.1_turn_classification_oracle.xlsx       # Nhãn Req/NonReq & kiểm tra thủ công (tp/tn/fp/fn) cho 133 turns
-│       └── RQ1.2_turn_requirements_oracle.xlsx         # 57 turns kèm 4 câu trả lời chuẩn (Answer 1..4) do 20 người viết
+│   ├── turn_level/                                     # Ground truth ở cấp độ từng lượt lời (Turn-level Oracles)
+│   │   ├── RQ1.1_turn_classification_oracle.xlsx       # Nhãn Req/NonReq & kiểm tra thủ công (tp/tn/fp/fn) cho 133 turns
+│   │   └── RQ1.2_turn_requirements_oracle.xlsx         # 57 turns kèm 4 câu trả lời chuẩn (Answer 1..4) do 20 người viết
+│   └── user_stories/                                   # [Inter2US] Ground truth dạng User Stories & Alignment trên cùng hội thoại
+│       ├── user_stories.csv                            # 37 User Stories chuẩn ("As a..., I want..., so that...")
+│       ├── chunks_turns_3s1.csv                        # Hội thoại cắt thành các chunk trượt 3 lượt lời (stride 1)
+│       └── all_pairs_annotated.csv                     # Nhãn căn chỉnh cặp (User Story, Chunk Text) với Score 0/1
 ├── baselines/                                          # [BASELINES] Kết quả đầu ra của các mô hình trong bài báo RECOVER
 │   ├── Step1-2_predicted_turns.txt                     # 62 lượt lời / cặp Q&A sau khi lọc qua Step 1 (SVC) & Step 2 (DialogTag)
 │   ├── recover_requirements.txt                        # 135 câu requirements do RECOVER (Llama-2-7b) sinh ra ở Step 3
@@ -46,6 +51,7 @@ Tùy vào mục tiêu thực nghiệm, bạn chọn cặp **Input Raw $\rightarr
 | **Task 2: Turn-Level Requirement Identification**<br>*(Phân loại lượt lời nào có chứa thông tin yêu cầu: `Req` vs `NonReq`)* | Cột `sentence` (133 turns) trong<br>`ground_truth/turn_level/RQ1.1_turn_classification_oracle.xlsx` | Suy ra từ cột `prediction` + `manual check`:<br>• **True `Req` (51 turns)**: `tp` (39) + `fn` (12)<br>• **True `NonReq` (82 turns)**: `tn` (59) + `fp` (23) | Cột `prediction` (`62 Req`, `71 NonReq`) của mô hình `FastText + SVC` |
 | **Task 3: Turn-Level Requirement Generation**<br>*(Sinh câu requirement từ từng đoạn trích hội thoại)* | Cột `Turns` (57 đoạn trích) trong<br>`ground_truth/turn_level/RQ1.2_turn_requirements_oracle.xlsx` | Các cột `Answer 1`, `Answer 2`, `Answer 3`, `Answer 4` *(do 4 chuyên gia độc lập viết cho mỗi turn)* | Cột `LLM requirements` trong cùng file Excel |
 | **Task 4: FR vs. NFR Classification & Groundedness**<br>*(Phân loại yêu cầu Chức năng `FR` và Phi chức năng `NFR`)* | • 28 câu chuẩn: `ground_truth/experts_final_requirements.csv`<br>• 135 câu máy sinh: `baselines/recover_requirements_FR_NFR.csv` | • Cột `label` (`24 FR`, `4 NFR`) trong `experts_final_requirements.csv`<br>• Cột `label` (`119 FR`, `16 NFR` — gồm `11` NFR có thật trong hội thoại & `5` NFR do LLM tự suy diễn) trong `recover_requirements_FR_NFR.csv` | Kết quả phân tích trong `baselines/Step3_Results_Formatted.xlsx` |
+| **Task 5: User Story Elicitation & Alignment**<br>*(Trích xuất User Stories & căn chỉnh hội thoại — Inter2US)* | `raw_conversation/example_conversation.txt`<br>*(hoặc `ground_truth/user_stories/chunks_turns_3s1.csv`)* | • 37 User Stories: `ground_truth/user_stories/user_stories.csv`<br>• Nhãn căn chỉnh `(User Story, Chunk)`: `ground_truth/user_stories/all_pairs_annotated.csv` (`Score` = `0` / `1`) | — |
 
 ---
 
@@ -124,6 +130,10 @@ Kết quả chạy từ `evaluation/RQ2_results_evaluation.ipynb` so sánh với
 
 ## 7. Nguồn dữ liệu & Trích dẫn (`Source & Citation`)
 
-* **Tác phẩm gốc**: *RECOVER: Toward the Automatic Requirements Generation from Stakeholders’ Conversations*
-* **Online Appendix (Figshare)**: https://figshare.com/s/46661b70336a46d66ac8
+* **RECOVER (System Requirements & Turn-level Oracles)**:
+  * Bài báo: *RECOVER: Toward the Automatic Requirements Generation from Stakeholders’ Conversations*
+  * Online Appendix (Figshare): https://figshare.com/s/46661b70336a46d66ac8
+* **Inter2US (User Stories & Interview-to-Story Alignment)**:
+  * Bài báo: *Automatic Alignment between Elicitation Interviews and Requirements*
+  * Reproducibility Package (Zenodo): https://zenodo.org/records/20596692
 
