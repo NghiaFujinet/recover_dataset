@@ -1,0 +1,104 @@
+,Requirement,Name of Doc,Req/Not Req
+3437,"The DigitalHome System shall allow a web-ready computer, cell phone or PDA to control a home's temperature, humidity, lights, security, and the state of small appliances.",home 1.3.pdf,Req
+3438,"The communication center of the DH system shall be a DH home web server, through which a user shall be able to monitor and control home devices and systems.",home 1.3.pdf,Req
+3439,"Each DigitalHome shall contain a master control device (the DH Gateway Device) that connects to the home’s broadband Internet connection, and uses wireless communication to send and receive communication between the DigitalHome system and the home devices and systems.",home 1.3.pdf,Req
+3440,"The DigitalHome shall be equipped with various environmental controllers and sensors (temperature controller-sensors: thermostats, humidity controller-sensors: humidistats, contact sensors, security sound and light alarms, and power switches).",home 1.3.pdf,Req
+3441,"Using wireless communication, sensor values can be read and saved in the home database.",home 1.3.pdf,Req
+3442,Controller values can be sent to controllers to change the DH environment.,home 1.3.pdf,Req
+3443,"The DigitalHome programmable thermostat shall allow a user to monitor and control a home’s temperature from any location, using a web ready computer, cell phone, or PDA.",home 1.3.pdf,Req
+3444,A DH user shall be able to read the temperature at a thermostat position.,home 1.3.pdf,Req
+3445,"A DH user shall be able to set the thermostat temperatures to between 60 °F and 80 °F, inclusive, at one degree increments.",home 1.3.pdf,Req
+3446,Up to eight thermostats shall be placed in rooms throughout the home.,home 1.3.pdf,Req
+3447,"The thermostats may be controlled individually or collectively, so that temperature can be controlled at different levels in different home spaces.",home 1.3.pdf,Req
+3448,"A single thermostat shall be placed in an enclosed space (e.g., a room in the house) for which the air temperature is to be controlled.",home 1.3.pdf,Req
+3449,"For each thermostat, up to twenty-four one hour settings per day for every day of the week can be scheduled.",home 1.3.pdf,Req
+3450,"If a thermostat device allows a user to make a manual temperature setting, the setting shall remain in effect until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.",home 1.3.pdf,Req
+3451,"A thermostat unit shall communicate, through wireless signals, with the master control unit.",home 1.3.pdf,Req
+3452,The system shall support Fahrenheit and Celsius temperature values.,home 1.3.pdf,Req
+3453,"The system shall be compatible with a centralized HVAC (Heating, Ventilation and Air Conditioning) systems: gas, oil, electricity, solar, or a combination of two or more. ",home 1.3.pdf,Req
+3454,"The system shall adhere to the standards, policies and procedures of the American Society of Heating, Refrigerating and Air-Conditioning Engineers [ASHRAE 2010].",home 1.3.pdf,Req
+3455,"The DigitalHome programmable humidistat shall allow a user to monitor and control a home’s humidity from any location, using a web ready computer, cell phone, or PDA.",home 1.3.pdf,Req
+3456,A DH user shall be able to read the humidity at a humidistat position.,home 1.3.pdf,Req
+3457,"A DH user shall be able to set the humidity level for a humidistat, from 30% to 60%, inclusive a 1% increments.",home 1.3.pdf,Req
+3458,Up to eight humidistats shall be placed in rooms throughout the home.,home 1.3.pdf,Req
+3459,"A single humidistat shall be placed in an enclosed space (e.g., a room in the house) for which the humidity is to be controlled.",home 1.3.pdf,Req
+3460,"If a humdistat device allows a user to make a manual temperature setting, the setting shall remain in effect until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.",home 1.3.pdf,Req
+3461,"For each humidistat, up to twenty-four one hour settings per day for every day of the week can be scheduled.",home 1.3.pdf,Req
+3462,"A DigitalHome system shall use wireless signals to communicate, through the master control unit, with the humidistats.",home 1.3.pdf,Req
+3463,The DigitalHome security system consists of contact sensors and a set security alarms.,home 1.3.pdf,Req
+3464,A DigitalHome system shall be able to manage up to fifty door and window contact sensors.,home 1.3.pdf,Req
+3465,"A DigitalHome system shall be able to activate both light and sound alarms: one sound alarm and one light alarm subsystem, with multiple lights.",home 1.3.pdf,Req
+3466,"When a security breach occurs and a contact sensor is set OPEN, the alarm system shall be activated.",home 1.3.pdf,Req
+3467,"The DigitalHome programmable Appliance Manager shall provide for management of a home’s small appliances, including lighting units, by allowing a user to turn them on or off as desired.",home 1.3.pdf,Req
+3468,"The Appliance Manager shall be able to manage up to one hundred 115 volt, 10 amp power switches.",home 1.3.pdf,Req
+3469,"The system shall be able to provide information about the state of a power switch (OFF or ON), indicating the whether an appliance connected to the power switch is OFF or ON.",home 1.3.pdf,Req
+3470,"The system shall be able to change the state of a power switch (OFF to ON, or ON to OFF), in turn changing the state of an appliance connected to the power switch.",home 1.3.pdf,Req
+3471,"If a user changes the state of power switch device manually, the device shall remain in that state until the end of the planned or default time period, at which time the planned or default setting will be used for the next time period.",home 1.3.pdf,Req
+3472,"DigitalHome Planner shall provide a user with the capability to direct the system to set various preset home parameters (temperature, humidity, security contacts, and on/off appliance/light status) for certain time periods.",home 1.3.pdf,Req
+3473,DigitalHome provides a monthly planner.,home 1.3.pdf,Req
+3474,"For a given month and year, a user shall be able to create or modify a month plan that specifies for each day, for up to four daily time periods, the environmental parameter settings (temperature, humidity, contact sensors and power switches).",home 1.3.pdf,Req
+3475,"A user shall be able to override planned parameter values, through the DH website, or if available, through manual switches on household devices",home 1.3.pdf,Req
+3476,"For a given month and year, in the past two years, DigitalHome shall be able to provide a report on the management and control of the home.",home 1.3.pdf,Req
+3477,"The month report shall contain daily average, maximum (with time) and minimum (with time) values of temperature and humidity for each thermostat and humidistat, respectively.",home 1.3.pdf,Req
+3478,"The month report shall provide the day and time for which any security breaches occurred, that is, when the security alarms were activated.",home 1.3.pdf,Req
+3479,The month report shall provide a section that indicates the periods of time when the DH System was not in operation..,home 1.3.pdf,Req
+3480,"Displays of environmental conditions (temperature, humidity, contact sensors and power switches) shall be updated at least every two seconds.",home 1.3.pdf,Req
+3481,"Sensor (temperature, humidity, contact sensor, power state) shall have a minimum data acquisition rate of 10 Hz.",home 1.3.pdf,Req
+3482,"An environmental sensor or controller device shall have to be within 1000 feet of the master control device, in order to be in communication with the system.",home 1.3.pdf,Req
+3483,"The DigitalHome System must be highly reliable with no more than 1 failure per 10,000 hours of operation.",home 1.3.pdf,Req
+3484,The Digital Home System shall incorporate backup and recovery mechanisms.,home 1.3.pdf,Req
+3485,"The DH System will backup all system data (configuration, default parameter settings, planning, and usage data) on a daily basis, with the backup time set by the DH Technician at system set up.",home 1.3.pdf,Req
+3486,"If the DH System fails (due to power loss, loss of internet access, or other software or hardware failure), the system recovery mechanism shall restore system data (configuration, default parameter settings, planning, and usage data) from the most recent backup.",home 1.3.pdf,Req
+3487,"All DigitalHome operations shall incorporate exception handling so that the system responds to a user with a clear, descriptive message when an error or an exceptional condition occurs.",home 1.3.pdf,Req
+3488,"Although there are no specific safety requirements, high system reliability is important to insure there are no system failures in carrying out user requests. ",home 1.3.pdf,Req
+3489,"Such failures might affect the safety of home dwellers (e.g., security breaches, inadequate lighting in dark spaces, inappropriate temperature and humidity for people who are in ill-health, or powering certain appliances when young children are present).",home 1.3.pdf,Req
+3490,"Upon installation, a DigitalHome user account shall be established. ",home 1.3.pdf,Req
+3491,"The DigitalHome web system shall provide for authentication and information encryption through a recognized reliable and effective security technology, such as Transport Layer Security.",home 1.3.pdf,Req
+3492,Log in to an account shall require entry of an account name and a password.,home 1.3.pdf,Req
+3493,"The development of the DH system shall use methods and techniques such as the following to support system maintenance: Documentation of requirements, design, and code, Use of abstraction, information hiding and module independence in system design; and Use of IEEE standards [IEEE830, IEEE1008, IEEE1016, IEEE1028] and the HomeOwner Coding Standard [HO4710].",home 1.3.pdf,Req
+3494,"Although the product produced under this document will be a “prototype” version, all modules and components of this prototype version shall be designed and implemented in such a manner that it may be incorporated in a fully specified commercial version of the DigitalHome System.",home 1.3.pdf,Req
+3495,"All system documents (Software Requirements Specification, Architectural Design Specification, Module Detailed Design, Module Source Code, and all Test Plans) shall be up-to-date, use the Homeowner document format [HO2305] and reside in the HomeOwner Document Archive at completion of the project.",home 1.3.pdf,Req
+3496,"HomeOwner has designated object-oriented development, using UML 2.0, as the preferred method for development of software for HomeOwner products. Exceptions to this rule must be approved by the CIO.",home 1.3.pdf,Req
+3497,The DigitalHome System shall provide users with online documentation about the DigitalHome system installed in their home. ,home 1.3.pdf,Req
+3498,"The user documentation shall include the following: An FAQ section – a set of “Frequently Asked Questions” about use and maintenance of the DigitalHome System (e.g., “How do I change my password?”, “Where to I go to get DigitalHome support?”), ",home 1.3.pdf,Req
+3499,The user documentation shall include the following: A section that explains how DH parameters are set and sensor values are read. ,home 1.3.pdf,Req
+3500,This shall include information on limitations and constraints on parameter settings and sensor reading accuracy.,home 1.3.pdf,Req
+3501,The user documentation shall include the following: A section that describes how to use the DH Planner.,home 1.3.pdf,Req
+6179,"This document specifies the requirements for the development of a “Smart House”, called DigitalHome (DH), by the DigitalHomeOwner Division of HomeOwner Inc. ",home 1.3.pdf,Not_Req
+6180,"A “Smart House” is a home management system that allows home residents to easily manage their daily lives by providing for a lifestyle that brings together security, environmental and energy management (temperature, humidity and lighting), entertainment, and communications. ",home 1.3.pdf,Not_Req
+6181,"The Smart House components consist of household devices (e.g., a heating and air conditioning unit, a security system, and small appliances and lighting units, etc.), sensors and controllers for the devices, communication links between the components, and a computer system, which will manage the components.",home 1.3.pdf,Not_Req
+6182,The DigitalHome Software Requirements Specification (SRS) is based on the DigitalHome Customer Need Statement.,home 1.3.pdf,Not_Req
+6183,It is made up of a list of the principal features of the system. ,home 1.3.pdf,Not_Req
+6184,"This initial version of DigitalHome will be a limited prototype version, which will be used by HomeOwner management to make business decisions about the future commercial development of DigitalHomeOwner products and services. ",home 1.3.pdf,Not_Req
+6185,"Hence, the SRS is not intended as a comprehensive or complete specification of DigitalHome requirements. ",home 1.3.pdf,Not_Req
+6186,There is a supplementary document that provides additional detail and information about the DigitalHome requirements: the Digital Home Use Case Model [HO2010]. ,home 1.3.pdf,Not_Req
+6187,"These document were prepared by the DigitalHomeOwner Division, in consultation with the Marketing Division of HomeOwner Inc.",home 1.3.pdf,Not_Req
+6188,"The Digital Home system, for the purposes of this document, is a system that will allow a home user to manage devices that control the environment of a home. ",home 1.3.pdf,Not_Req
+6189,The user communicates through a personal web page on the DigitalHome web server or on a local home server. ,home 1.3.pdf,Not_Req
+6190,"The DH web server communicates, through a home wireless gateway device, with the sensor and controller devices in the home.",home 1.3.pdf,Not_Req
+6191,"The product is based on the Digital Home High Level Requirements Definition [HLRD 2010] is intended as a prototype, which will allow business decisions to be made about future development of a commercial product. ",home 1.3.pdf,Not_Req
+6192,"The scope of the project will be limited to the management of devices which control temperature, humidity, security, and power to small appliances and lighting units, through the use of a web-ready device. ",home 1.3.pdf,Not_Req
+6193,The prototype DH software system will be situated in a simulated environment. ,home 1.3.pdf,Not_Req
+6194,There will be no actual physical home and all sensors and controllers will be simulated.,home 1.3.pdf,Not_Req
+6195,The general user shall be able to use the DH system capabilities to monitor and control the environment in his/her home.,home 1.3.pdf,Not_Req
+6196,"The general user is familiar with the layout of his/her home and the location of sensor and control devices (for temperature, for humidity, and for power to small appliances and lighting units).",home 1.3.pdf,Not_Req
+6197,"Although the general user is not familiar with the technical features of the DH system, he/she is familiar with the use of a web interface and can perform simple web operations (logging in and logging out, browsing web pages, and submitting information and requests via a web interface).",home 1.3.pdf,Not_Req
+6198,"A Master user will be designated, who shall be able to change the configuration of the system. ",home 1.3.pdf,Not_Req
+6199,"For example, a Master User shall be able to add a user account or change the default parameter settings. He/she will have the same right as the DH Technician, described in section 3.2.2.4.",home 1.3.pdf,Not_Req
+6200,A DH Technician is responsible for setting up and maintaining the configuration of a DH system.,home 1.3.pdf,Not_Req
+6201,"A DH Technician has experience with the type of hardware, software, and web services associated with a system like the DH system.",home 1.3.pdf,Not_Req
+6202,"A DH Technician is specially trained by DigitalHomeOwner to be familiar with the functionality, architecture, and operation of the DH system product.",home 1.3.pdf,Not_Req
+6203,"A DH Technician will have rights beyond the DH General User, capable of setting up and making changes in the configuration of the system (e.g.,setting system parameters and establishing user accounts), and starting and stopping operation of the DH System.",home 1.3.pdf,Not_Req
+6204,The “prototype” version of the DigitalHome System (as specified in this document) must be completed within twelve months of inception.,home 1.3.pdf,Not_Req
+6205,The development team will consist of five engineers. ,home 1.3.pdf,Not_Req
+6206,The DigitalHomeOwner Director will provide management and communication support.,home 1.3.pdf,Not_Req
+6207,The development team will use the development process specified by the Digital HomeOwner Inc.,home 1.3.pdf,Not_Req
+6208,"Where possible, the DigitalHome project will employ widely used, accepted, and available hardware and software technology and standards, both for product elements and for development tools. ",home 1.3.pdf,Not_Req
+6209,See section 3.4 for additional detail.,home 1.3.pdf,Not_Req
+6210,"Because of potential market competition for DigitalHome products, the cost of DigitalHome elements (sensors, controllers, server, tools, etc.), for this project should be minimized. ",home 1.3.pdf,Not_Req
+6211,"As part of the final project report the development team will describe their efforts to minimize costs, including price comparisons between DH elements and comparable/competitive elements.",home 1.3.pdf,Not_Req
+6212,The DH system will be tested in a simulated environment. ,home 1.3.pdf,Not_Req
+6213,There will be no actual physical home and all sensors and controllers will be simulated. ,home 1.3.pdf,Not_Req
+6214,"However, the simulated environment will be realistic and adhere to the physical properties and constraints of an actual home and to real sensors and controllers.",home 1.3.pdf,Not_Req
+6215,"Major changes to this document (e.g., changes in requirements) must be approved by the Director of the DigitalHomeOwner Division.",home 1.3.pdf,Not_Req
+6216,"Although the system to be developed is a “proof of concept” system intended to help Homeowner Inc. to make marketing and development decisions, the following sections describe operational environment concerns and constraints; some of them are related to issues of long-term production and marketing of a DigitalHome product.",home 1.3.pdf,Not_Req

@@ -1,0 +1,448 @@
+,Requirement,Name of Doc,Req/Not Req
+3725,Allows resources to be reviewed before a decision is made whether they should be retained.,nlm.doc,Req
+3726,Some metadata checks and data conversion may be necessary to allow initial materials to be reviewed,nlm.doc,Req
+3727,"Allows for a definition of the audience for whom the information is intended, who is given access rights, and length of retention.",nlm.doc,Req
+3728,Allows for temporary storage outside of the repository (this is optional for certain NLM collections).,nlm.doc,Req
+3729,"Supports workflow of digital objects in this order: Receive and track content from producers, Normalize content – the conversion into a common format for final ingestion into the repository, Validate content based on submitter, expected format, file quality, duplication (e.g., existence of object in repository), and completeness,Review content as a method of the selection process, Accept or reject content or file format.",nlm.doc,Req
+3730,A minimal set of identifying information/metadata concerning rejection decisions must be recorded.,nlm.doc,Req
+3731,A minimal set of identifying information/metadata concerning rejected submissions should provide a mechanism to eliminate the need to review some resubmissions. ,nlm.doc,Req
+3732,Certain reasons for rejection should prevent a possible resubmission.,nlm.doc,Req
+3733,Allows notification of producers and donors about rejected content.,nlm.doc,Req
+3734,"Accepts content from physical media (DVDs, external drives, etc.) or via electronic transfer (FTP) from producers.",nlm.doc,Req
+3735,"Accepts content in numerous file types/formats: TIFF images for storage, XML text, audio, streaming video, and PDF.",nlm.doc,Req
+3736,"Accepts SIPS in the following formats: XML, MARC, MARC XML, MODS, EAD, DC, TEI, etc.",nlm.doc,Req
+3737,"Accepts the following types of digital objects: Articles, journals, images, monographs, audio files, video files, websites, numeric data, text files, and databases.",nlm.doc,Req
+3738,Examples of conversions may include: upgrading the version of software being submitted; converting one program to another,nlm.doc,Req
+3739,"Conversion needs only to preserve content, not the look, feel and experience of the original.",nlm.doc,Req
+3740,Prompts a request for resubmission to the Content Originator if an error of transmission or receipt occurs.,nlm.doc,Req
+3741,Error message feature is configurable for all types of errors.,nlm.doc,Req
+3742,System generates an error log.,nlm.doc,Req
+3743,Allows retention of metadata for files rejected but not replaced.,nlm.doc,Req
+3744,Transmission problems allow rejection of entire packages.,nlm.doc,Req
+3745,"Other problems will allow rejection of entire package or part of a package, depending on content.",nlm.doc,Req
+3746,Maintains log of messages sent concerning resubmissions.,nlm.doc,Req
+3747,Accommodates a resubmitted SIP in case of errors resulting from the SIP submission.,nlm.doc,Req
+3748,"Has the option of sending a configurable automatic system confirmation receipt of SIP to producer based on type of resource, file, producer, etc.",nlm.doc,Req
+3749,Stores and tracks versions of a document/file/image. Links /connections between versions are created and maintained.,nlm.doc,Req
+3750,"Assigns a unique identifier to each object. Submitted content may be composed of multiple items, and the system must maintain the relationship between the parent object and any subsequent child objects (i.e., tracking of unique identifiers for child objects and the parent object; possible inheritance of parent object identifier to child objects).",nlm.doc,Req
+3751,Keeps an audit trail of all actions.,nlm.doc,Req
+3752,Performs virus checking on SIP.,nlm.doc,Req
+3753,Validates automatically the successful transfer of the SIP to a staging area using Cyclic Redundancy Check (CRCs) or checksums associated with each data file.,nlm.doc,Req
+3754,"Verifies the validity of the submission based on submitter, expected format, file quality, duplication (e.g., existence of object in repository), and completeness.",nlm.doc,Req
+3755,Allows NLM staff to display and perform manual/visual quality control assurance on staged SIPs via a user-friendly GUI interface.,nlm.doc,Req
+3756,Any QA errors shall prompt a request for resubmission and/or internal action.,nlm.doc,Req
+3757,Internal action may result in creation of a digital object in another preferred format.,nlm.doc,Req
+3758,Allows NLM staff to accept or reject the SIPs at file or batch level.,nlm.doc,Req
+3759,Generates statistical and error reports.,nlm.doc,Req
+3760,Ability to adjust the level of manual quality control needed based on the origin of the file.,nlm.doc,Req
+3761,Keeps an audit trail of all actions.,nlm.doc,Req
+3762,Generates AIPs for Repository Storage by transforming SIPs to conform to repository’s data formatting standards.,nlm.doc,Req
+3763,"Issues report requests to Data Management to obtain reports of information to produce Descriptive Information (metadata) that completes the AIP, as covered in 7.1.1.10 and 7.1.1.13.",nlm.doc,Req
+3764,Capable of interacting with other parts of the system to obtain additional information as needed.,nlm.doc,Req
+3765,Keeps an audit trail of all actions.,nlm.doc,Req
+3766,Converts data as described in 7.1.1.10.,nlm.doc,Req
+3767,AIPs may consist of both masters files and derivatives.,nlm.doc,Req
+3768,"Allows entry and validation of additional metadata (e.g. subject headings, names, dates, “curatorial” descriptive metadata - evaluative information that explains why an object is important, whether it was part of a larger collection (e.g., an exhibit), etc.).",nlm.doc,Req
+3769,Is able to validate specified metadata elements,nlm.doc,Req
+3770,Allows metadata to be stored in a database in a manner that conforms to repository reformatting and linked to their corresponding objects via an identifier.,nlm.doc,Req
+3771,"Basic descriptive metadata will also be stored with the objects (e.g., unique identifier, title and date stored in the TIFF header) so that the objects can still be identified in the event that information in the database is corrupted.",nlm.doc,Req
+3772,See Appendix D for examples of TIFF header metadata requirements.,nlm.doc,Req
+3773,Is able to recognize required descriptive elements.,nlm.doc,Req
+3774,Recognizes and documents relations among files.,nlm.doc,Req
+3775,Keeps an audit trail of all actions.,nlm.doc,Req
+3776,Transfers the AIPs to Archival Storage.,nlm.doc,Req
+3777,Includes a storage request which provides a storage confirmation for the AIP.,nlm.doc,Req
+3778,Transfers the Descriptive Information to Data Management.,nlm.doc,Req
+3779,Sends confirmation notification when transfer to archival storage is completed.,nlm.doc,Req
+3780,Stores the identification information in the Data Management database to support search and retrieval of AIPs in Archive Storage.,nlm.doc,Req
+3781,Identifiers are the link between Data Management and digital objects.,nlm.doc,Req
+3782,AIPS and Descriptive Information will be put back together when objects are accessed.,nlm.doc,Req
+3783,Keeps an audit trail of all actions.,nlm.doc,Req
+3784,Receives AIPs from Ingest.,nlm.doc,Req
+3785,Moves and adds AIPs to storage within the repository,nlm.doc,Req
+3786,"Generates confirmation, statistical and error reports for the AIP process.",nlm.doc,Req
+3787,Keeps an audit trail of all actions.,nlm.doc,Req
+3788,Monitors and ensures that AIPs are not corrupted during transfers.,nlm.doc,Req
+3789,Conforms to NLM security policies and requirements to ensure the appropriate level of protection for the AIPs.,nlm.doc,Req
+3790,Keeps an audit trail of all actions.,nlm.doc,Req
+3791,"Able to refresh/replace the media on which repository holdings are stored without service interruption, and update corresponding metadata as appropriate.",nlm.doc,Req
+3792,Able to ensure that Content Information and Preservation Description Information (PDI) are not altered.,nlm.doc,Req
+3793,Provides statistically acceptable assurance that no components of the AIP are corrupted during any internal Archival Storage data transfer.,nlm.doc,Req
+3794,Performs routine and special data integrity checking such as Cyclic Redundancy Checks (CRC) or checksums for each individual file and generates error reports.,nlm.doc,Req
+3795,"Provides disaster recovery capabilities including data backup, off-site data storage, data recovery, etc.",nlm.doc,Req
+3796,Provides AIPs to Access to generate Dissemination Information Packages (DIPs).,nlm.doc,Req
+3797,Keeps an audit trail of all actions.,nlm.doc,Req
+3798,Maintains the integrity of the Data Management database which contains both metadata and system information.,nlm.doc,Req
+3799,Provides internal validation such as referential integrity of the contents of the database.,nlm.doc,Req
+3800,Creates and maintains schema or table definitions required to support Data Management functions.,nlm.doc,Req
+3801,"Has capability to create, maintain, and access customized user views of the contents of this storage.",nlm.doc,Req
+3802,"Query requests are received from other functions (for example, Ingest, Access, and Administration).",nlm.doc,Req
+3803,The query request may require data to be sourced from different storage locations.,nlm.doc,Req
+3804,Generates a result set.,nlm.doc,Req
+3805,Allows query requests against all metadata used to manage the repository.,nlm.doc,Req
+3806,Keeps an audit trail of all actions.,nlm.doc,Req
+3807,Supports the production of management information reports and statistics.,nlm.doc,Req
+3808,"Receives report requests from other NLM Digital Repository functions (for example, Ingest, Access, Administration).",nlm.doc,Req
+3809,"Has capability to generate database update confirmation, statistical and error reports to Ingest.",nlm.doc,Req
+3810,"Has capability to generate reports in an ad-hoc manner, automatically, or to be triggered by a reporting calendar or by a specific system event.",nlm.doc,Req
+3811,"Has capability to generate and provide reports such as summaries of repository holdings by category, usage statistics for access to repository holdings, and descriptive information for a specific AIP.",nlm.doc,Req
+3812,Reports may be specific to a time period or set of time periods.,nlm.doc,Req
+3813,Keeps an audit trail of all actions.,nlm.doc,Req
+3814,"Receives updates from other NLM Digital Repository functions (for example, Ingest and Administration).",nlm.doc,Req
+3815,Allows updates to be submitted in batches.,nlm.doc,Req
+3816,Allows online updates to individual records by authorized staff.,nlm.doc,Req
+3817,"Has capability to generate and provide management reports and statistics such as summaries of updates by category, user codes, etc.",nlm.doc,Req
+3818,There may be a need to coordinate updates with metadata held in other systems.,nlm.doc,Req
+3819,Keeps an audit trail of all actions.,nlm.doc,Req
+3820,Audits submissions to ensure that they meet archive/repository standards.,nlm.doc,Req
+3821,Maintains configuration management of the system hardware and software.,nlm.doc,Req
+3822,"Has capability to inventory, report on and migrate the contents of the repository.",nlm.doc,Req
+3823,Ensures data integrity for version upgrades and format migration.,nlm.doc,Req
+3824,"Tracks negotiation status, written submission agreements and maintains schedules.",nlm.doc,Req
+3825,"Able to add and edit terms of agreement, based on access of level of user.",nlm.doc,Req
+3826,Submission schedules may be set on a periodic or ad-hoc basis.,nlm.doc,Req
+3827,Submission volumes and schedules are managed and monitored.,nlm.doc,Req
+3828,"Able to store terms of agreements, and use them to monitor/review/process submissions.",nlm.doc,Req
+3829,Keeps an audit trail of all actions.,nlm.doc,Req
+3830,Monitors functionality of the entire repository.,nlm.doc,Req
+3831,Maintains integrity of system configuration.,nlm.doc,Req
+3832,"Audits system operations, performance and usage.",nlm.doc,Req
+3833,Sends requests for system information to Data Management and receives reports.,nlm.doc,Req
+3834,Receives operational statistics from Archival Storage.,nlm.doc,Req
+3835,Summarizes reports and provides repository performance information and repository holdings inventory reports to Preservation Planning.,nlm.doc,Req
+3836,Sends performance information to Establish Standards and Polices.,nlm.doc,Req
+3837,Receives migration packages from Preservation Planning.,nlm.doc,Req
+3838,Develops and implements plans for system evolution.,nlm.doc,Req
+3839,"Submits change requests, procedures and tools to Archive Information Update.",nlm.doc,Req
+3840,"Receives change requests, actions and tools from the Manage System Configuration function.",nlm.doc,Req
+3841,Requests DIPs from the Access function.,nlm.doc,Req
+3842,Updates contents of DIPs and resubmits them as SIPs to Ingest.,nlm.doc,Req
+3843,"Deletes AIPs from the repository. This may require the removal of the digital object’s files, and the retention of associated metadata, or the removal of both the files and metadata.",nlm.doc,Req
+3844,Coordinates the removal of an AIP with the maintenance of metadata held in other systems. Provides an alert that other systems need to be updated.,nlm.doc,Req
+3845,Schedules and performs file migrations.,nlm.doc,Req
+3846,Keeps an audit trail of all actions.,nlm.doc,Req
+3847,"Establishes and maintains NLM Digital Repository best policies, practices and procedures, including those outlined in Sections 6.1 and 6.2.",nlm.doc,Req
+3848,Establishes workflows and business processes for NLM Digital Repository functions.,nlm.doc,Req
+3849,"Develops multiple preservation strategies dependent upon, and specific to, the nature of digital material.",nlm.doc,Req
+3850,Receives recommendations for system enhancement and proposals for new procedures from Preservation Planning.,nlm.doc,Req
+3851,Receives performance information and holdings inventory information from Manage System Configuration.,nlm.doc,Req
+3852,"Provides approved standards, procedures and migration goals to Preservation Planning.",nlm.doc,Req
+3853,Develops storage management policies including migration policies.,nlm.doc,Req
+3854,Develops database administration policies.,nlm.doc,Req
+3855,Develops disaster recovery policies and procedures.,nlm.doc,Req
+3856,Determines security policies including the application of error control techniques.,nlm.doc,Req
+3857,Audits data in SIPs or AIPs to ensure that they meet specified requirements.,nlm.doc,Req
+3858,Checks and records required metadata appropriately in the database. Note: Metadata requirements may vary dependent on the information package type (SIP or AIP).,nlm.doc,Req
+3859,Rejects components of information packages that do not meet requirements.,nlm.doc,Req
+3860,Provides audit reports to the Ingest QA function.,nlm.doc,Req
+3861,Keeps an audit trail of all actions.,nlm.doc,Req
+3862,Maintains a record of event-driven events and compares it to the contents of the repository.,nlm.doc,Req
+3863,Generates dissemination requests to Access if needed data are available.,nlm.doc,Req
+3864,"Generates orders on a periodic basis (e.g., to update a database).",nlm.doc,Req
+3865,Keeps an audit trail of all actions.,nlm.doc,Req
+3866,Interacts with repository users and content providers to track changes in their service requirements and available product technologies.,nlm.doc,Req
+3867,Provides reports to the Develop Preservation Strategies and Standards function.,nlm.doc,Req
+3868,Provides requirements alerts to the Develop Preservation Strategies and Standards function.,nlm.doc,Req
+3869,Sends preservation requirements to Develop Packaging Designs.,nlm.doc,Req
+3870,The Repository System keeps an audit trail of all actions.,nlm.doc,Req
+3871,NLM monitors emerging technologies in order to maintain and improve the architecture.,nlm.doc,Req
+3872,"NLM monitors computing platforms (i.e., hardware and software) to identify technologies which could cause system obsolescence.",nlm.doc,Req
+3873,"NLM monitors information standards, including metadata standards and data interface standards.",nlm.doc,Req
+3874,The Repository System keeps an audit trail of all actions.,nlm.doc,Req
+3875,Develops and recommends strategies and best practices to enable the repository to anticipate future changes in the Designated Community service requirements that would require migration of some current repository holdings or new submissions.,nlm.doc,Req
+3876,Develops and recommends strategies and best practices to enable the repository to anticipate technology trends that would require migration of some current repository holdings or new submissions.,nlm.doc,Req
+3877,Receives reports from Monitor Designated Communities.,nlm.doc,Req
+3878,Receives reports from Monitor Technology.,nlm.doc,Req
+3879,Receives performance information from Administration.,nlm.doc,Req
+3880,Receives inventory reports from Administration.,nlm.doc,Req
+3881,Receives summarized consumer comments from Administration.,nlm.doc,Req
+3882,Sends recommendations on system evolution to Administration.,nlm.doc,Req
+3883,Receives external data standards from Monitor Technology.,nlm.doc,Req
+3884,Produces profiles of those standards that are sent to Administration as proposals on their potential usage.,nlm.doc,Req
+3885,Receives issues from Develop Packaging Designs and Migration Plans in the case of unanticipated submission requirements.,nlm.doc,Req
+3886,Responds with advice to handle new requirements.,nlm.doc,Req
+3887,Receives from Administration and reviews disaster recovery policies and procedures.,nlm.doc,Req
+3888,The Repository System keeps an audit trail of all actions.,nlm.doc,Req
+3889,Develops new IP designs and detailed migration plans and prototypes to implement Administration policies and directives.,nlm.doc,Req
+3890,Provides advice on the application of these IP designs and migration plans to specific repository holdings and submissions.,nlm.doc,Req
+3891,Receives repository approved standards and migration goals from Administration. ,nlm.doc,Req
+3892,"Standards include format standards, metadata standards and documentation standards.",nlm.doc,Req
+3893,Applies these standards to preservation requirements.,nlm.doc,Req
+3894,Provides AIP and SIP template designs to Administration.,nlm.doc,Req
+3895,Provides customization advice and AIP/SIP review to Administration on the application of those designs.,nlm.doc,Req
+3896,Requests and receives advice from Develop Preservation Strategies and Standards if submissions are encountered that are not covered by existing standards and procedures.,nlm.doc,Req
+3897,Develops new AIP designs in response to migration goals.,nlm.doc,Req
+3898,Develops prototype software in response to migration goals.,nlm.doc,Req
+3899,Develops test plans in response to migration goals.,nlm.doc,Req
+3900,Develops community review plans in response to migration goals.,nlm.doc,Req
+3901,Develops implementation plans for phasing in new AIPs in response to migration goals.,nlm.doc,Req
+3902,Consults with other functional areas and the Designated Community.,nlm.doc,Req
+3903,"Once the migration plan, associated AIP designs, and software have been tested and approved, sends the entire migration package to Administration, which will schedule and perform the actual migration.",nlm.doc,Req
+3904,The Repository System keeps an audit trail of all actions.,nlm.doc,Req
+3905,Controls access to data in the repository based on multiple permission levels. These permission levels determine the create/edit/read/delete privileges granted users.,nlm.doc,Req
+3906,"General Public Access: Allows restriction to access by the general public, based on licensing terms, time period (embargo periods), location (IP range restrictions), restricted workstation access as well as other possible legal restrictions.",nlm.doc,Req
+3907,"NIH Employee Access: Allows restriction to access by NIH employees, based on licensing terms, time period (embargo periods), location (IP range restrictions), restricted workstation access as well as other possible legal restrictions.",nlm.doc,Req
+3908,"NLM Staff Metadata Access: Provides an NLM Staff Level allowing access to staff to add or edit descriptive metadata (without changing the files themselves) for production and work related needs such as cataloging, indexing and modifying metadata.",nlm.doc,Req
+3909,"NLM Staff Maintenance Access: Provides a restricted NLM Staff Level, allowing specific NLM staff to work with the data itself: adding new files, checking the quality of digital files, manipulating images, editing technical (i.e. preservation) metadata, performing format conversions and migrations (e.g., from tiff to pdf, tiff to jpeg2000, etc.), and investigating problems with the system.",nlm.doc,Req
+3910,"NLM System Administration/Programming Access: Provides an NLM Administrative/Programming Level, ultimate rights to the system, required for its management, development, and for assigning appropriate rights to users.",nlm.doc,Req
+3911,"Access mechanisms must be sufficiently granular to allow the identification of individual users, in order to maintain audit logs of actions performed by users.",nlm.doc,Req
+3912,"Access rights and conditions to materials and the directories/folders in which they are kept must provide for one or more of the following basic privileges, either alone or in combination: Create/Write access, Edit access, Read access, Delete access.",nlm.doc,Req
+3913,"Access rights may be associated with the metadata relating to an individual object, i.e. the object may be embargoed, with limited internal staff access being available to metadata.  ",nlm.doc,Req
+3914,Both an object and its related metadata may be embargoed in terms of public access.,nlm.doc,Req
+3915,"The system will need to accommodate: computer interface access, defining access for a specific individual user or group of users the ability to assign different levels of access to different individuals and groups of users, either in a pre-defined role or in an ad hoc assignment",nlm.doc,Req
+3916,Access rights and conditions of use will be held for each digital object and its related metadata.,nlm.doc,Req
+3917,Access rights and conditions of use will be machine readable and actionable.,nlm.doc,Req
+3918,Access conditions may be specific to a digital object.,nlm.doc,Req
+3919,Access rights and conditions can be inherited from a parent object to any objects designated as a child object.,nlm.doc,Req
+3920,"Access rights and conditions can be assigned to an object on an individual basis, or on a group of identified objects at one time.",nlm.doc,Req
+3921,"Access status include the following conditions: Free access, where items are freely available via internal or external delivery mechanisms to all users, Restricted access, where access requires permission or satisfaction of some criteria; authorized user access is via an internal or a secure delivery mechanism; conditions can include: User type/status (general public, NIH staff, NLM staff, administrative staff) – access dependent on who the user is in relationship to NLM and NIH, Location – access restricted to specific IP location or physical location (specific workstation), Time period – access regulated by a designated embargo, Concurrent users – access regulated by the number of concurrent users allowed to access an object at a given time.",nlm.doc,Req
+3922,Objects in the repository are accessible for computational use/machine accessibility such as data mining or automated document retrieval.,nlm.doc,Req
+3923,Retains access to metadata for deleted or retracted content. (Access may restricted to NLM staff only).,nlm.doc,Req
+3924,Allows metadata harvesting by other institutions following the OAI-PMH guidelines.,nlm.doc,Req
+3925,Searches interface will be web-accessible and must be Section 508 compliant.,nlm.doc,Req
+3926,Provides metadata searching.,nlm.doc,Req
+3927,Provides full text searching.,nlm.doc,Req
+3928,Provides standard boolean search functions.,nlm.doc,Req
+3929,Provides proximity searching.,nlm.doc,Req
+3930,"Provides ""more like this"" functionality.",nlm.doc,Req
+3931,"Search results display should include: Date sort display, Relevancy ranking display, Author alphabetic display, Source alphabetic display.",nlm.doc,Req
+3932,"Relevancy ranking should be manipulable via system systems; ideally, user defined settings should also be provided.",nlm.doc,Req
+3933,"Image searching should be provided, including: Figure/description search, Actual image search (like chemical structure search/ draw sample image and find something similar).",nlm.doc,Req
+3934,Provides sound/audio searching.,nlm.doc,Req
+3935,Provides federated searching of different repository sites.,nlm.doc,Req
+3936,"Advanced search features should include: Search history, Saved searches, Saved citation lists/bibliographies, Alerts, Functions (topic updates, issue update, cited references, correction notices, etc), Formats (email, rss, podcasts, others), Dynamic selection of delivery media without recreating search query, Limits (like LocatorPlus / PubMed functions).",nlm.doc,Req
+3937,"System should provide a variety of standard display formats, including the ability for the user to customize the search results display as desired.",nlm.doc,Req
+3938,Alternate search interfaces should be available for searching via alternate mechanisms such as handhelds and PDAs.,nlm.doc,Req
+3939,"Provides access to the appropriate copy of the identified item (text, image, video, etc.) for the user.",nlm.doc,Req
+3940,Search result integration with library holdings (like current LinkOut function).,nlm.doc,Req
+3941,Provides quick response time.,nlm.doc,Req
+3942,"Allows searching by outside search engines such as FirstGov, Google and Yahoo, according to current NLM protocols and security policies.",nlm.doc,Req
+3943,Allows for external access to other repositories or systems performing web harvesting functions according to the NLM Repository's accepted standards and protocols for automated access ( in accordance to NLM robot.txt files and other instructional materials for harvesting and external access).,nlm.doc,Req
+3944,"Supports use of multiple languages and non-Roman scripts in search, retrieval and display.",nlm.doc,Req
+3945,Provides access to all versions of digital objects in the repository.,nlm.doc,Req
+3946,Provides system settings and user-defined settings for search functions.,nlm.doc,Req
+3947,"Data returned as a result of a dissemination request may consist of: one or more digital objects and associated metadata, one or more items of metadata, a response that indicates the User is not authorized to access the material requested, supports the bulk extraction of files/objects and /or associated metadata.",nlm.doc,Req
+3948,Generation function accepts a dissemination request.,nlm.doc,Req
+3949,Generation function retrieves the AIP from Archival Storage and moves a copy of the data to a staging area for further processing,nlm.doc,Req
+3950,Generation function creates and sends a report request to Data Management to obtain appropriate metadata.,nlm.doc,Req
+3951,The prepared DIP response is placed in the staging area and a message is generated and sent to Coordinate Access Activities that the DIP is ready for delivery.,nlm.doc,Req
+3952,"If special processing is required, the Generate function accesses data objects in staging storage and applies the requested processes.",nlm.doc,Req
+3953,Keeps an audit trail of all actions.,nlm.doc,Req
+3954,Display interface is web-accessible.,nlm.doc,Req
+3955,Has export function to provide XML output for batch downloads (similar to Eutilities in PubMed),nlm.doc,Req
+3956,"Allows user to save digital content to a hard-drive, to e-mail document and to save search results.",nlm.doc,Req
+3957,A response request is received from Coordinate Access Activities. ,nlm.doc,Req
+3958,"The intended recipient is identified, the appropriated transmission procedure determined and the online responses are placed in a staging area in preparation for delivery.",nlm.doc,Req
+3959,"Once the response has been sent, an appropriate confirmation message is returned to the Coordinate Access Activities section.",nlm.doc,Req
+3960,Keeps an audit trail of all actions.,nlm.doc,Req
+3961,"System should accept metadata associated with objects in at least the following formats: All NLM DTDs, Dublin Core, MARC21, MARCXML, ONIX, MODS, EAD, TEI.",nlm.doc,Req
+3962,"System should have built-in checks on the incoming metadata. Records not containing the minimally defined set of fields should be flagged as problems, either to be returned to the submitter, or sent locally for metadata enhancement.",nlm.doc,Req
+3963,System should have a user-friendly method of mapping non-standard metadata elements into approved NLM elements.,nlm.doc,Req
+3964,"Once ingested, metadata should be stored in a single common format. This format should be one that ensures against data loss, and allows a variety of access/distribution options, such as all the schemes mentioned above.",nlm.doc,Req
+3965,System must have the ability to allow for metadata updates.,nlm.doc,Req
+3966,"System must have the ability to search and display metadata, preferably in a user-conformable, human readable display as well as in its native format for machine harvesting and manipulation.",nlm.doc,Req
+3967,Objects in the repository shall have sufficient technical metadata to assure functionality (e.g. viewing and display) in the present and enable forward migration for future accessibility and use. Technical metadata requirements for objects created by NLM will be developed on a format-specific basis.,nlm.doc,Req
+7328,Policies and Functional Requirements Specification,nlm.doc,Not_Req
+7329,Prepared by the NLM Digital Repository Working Group,nlm.doc,Not_Req
+7330,Editorial changes to TEI recommendations in Policies Section 6.2.,nlm.doc,Not_Req
+7331,Digital Repository Working Group.,nlm.doc,Not_Req
+7332,"Requirements Specification sign-off: Sheldon Kotzin, Associate Director, Library Operations.",nlm.doc,Not_Req
+7333,This document uses a Table of Contents that has been adapted from the Volere Requirements Specification Template.,nlm.doc,Not_Req
+7334,"The National Library of Medicine acknowledges that this document uses material from the Volere Requirements Specification Template, copyright © 1995 - 2004 the Atlantic Systems Guild Limited.",nlm.doc,Not_Req
+7335,The Need for an NLM Digital Repository.,nlm.doc,Not_Req
+7336,"The mission of the National Library of Medicine is to acquire, organize, preserve and make accessible the published record of the biomedical sciences and health professions, irrespective of format. ",nlm.doc,Not_Req
+7337,"In order to fulfill this mandate, it is essential that the Library develop the robust infrastructure needed to manage and preserve a large amount of material in a variety of digital formats.",nlm.doc,Not_Req
+7338,A number of program areas within Library Operations are in need of such a digital repository to support their existing digital collections and to expand the ability to collect a growing amount of born-digital resources. ,nlm.doc,Not_Req
+7339,Dozens of digital collections which require long-term management and preservation have already been created by the History of Medicine Division. ,nlm.doc,Not_Req
+7340,"Collection development and acquisitions staffs are seeing an increasing availability of born-digital materials, including licensed e-journals and web sites that NLM needs to add to its collection. ",nlm.doc,Not_Req
+7341,NLM’s preservation program has embraced digitization as a preservation method to replace microfilming. ,nlm.doc,Not_Req
+7342,The creation of functional requirements and identification of key policy issues for an NLM Digital Repository are essential next steps to aid in building NLM’s collection in the digital environment.,nlm.doc,Not_Req
+7343,"The Library currently has processes in place for the ingest, management, storage, archiving and access of digital material for the following acquisition and ingest streams: electronic journals deposited in PubMedCentral (PMC); digitized back files of PMC journals; NLM Web page archive; and CIT Videocasts. ",nlm.doc,Not_Req
+7344,"At the current time, these are the only processes that have functionality that addresses the major components of OAIS functionality.",nlm.doc,Not_Req
+7345,The Library needs to put in place a reliable repository for the preservation of digital content not covered by PMC and the videocast project to ensure ongoing access. ,nlm.doc,Not_Req
+7346,Preserving digital material presents a different set of technological challenges from those of preserving analog material. ,nlm.doc,Not_Req
+7347,"The creation of a comprehensive Digital Repository capable of ingesting digital material, storing and managing that digital material and associated metadata, and ensuring that digital material is accessible for the long term is essential to NLM fulfilling its mission.",nlm.doc,Not_Req
+7348,The NLM Digital Repository is envisioned as one or more electronic storage systems within which digitized and born-digital objects created or acquired by NLM reside. ,nlm.doc,Not_Req
+7349,"The repository has the ability to store, preserve and provide access to all types of digital objects. ",nlm.doc,Not_Req
+7350,"ingest and management of content as well as the descriptive, administrative and structural metadata associated with stored objects.",nlm.doc,Not_Req
+7351,preservation of objects in approved formats.,nlm.doc,Not_Req
+7352,migration to new formats to insure objects do not become obsolete.,nlm.doc,Not_Req
+7353,controls to insure only permitted access to objects.,nlm.doc,Not_Req
+7354,The Purpose and Scope of this Document.,nlm.doc,Not_Req
+7355,"A Working Group was established in May, 2006 to develop high-level functional specifications for an NLM Digital Repository for NLM collection materials and to identify policy and management issues related to the creation, design and management of the repository.",nlm.doc,Not_Req
+7356,The scope of the working group’s responsibility was limited to digital repository requirements and issues related to the management of collection materials under Library Operations responsibility. ,nlm.doc,Not_Req
+7357,This included: the maintenance of the inventory of existing and planned digital projects; development of functional requirements for digital repository needs; identification of metadata and format standards for digital materials (scanned as well as born-digital); and identification of policy issues related to the digital repository. ,nlm.doc,Not_Req
+7358,"The group considered functionality of software and systems used to handle existing digital collections (e.g., PubMed Central, the Bookshelf, Images of the History of Medicine and other HMD digital collections) in scope.",nlm.doc,Not_Req
+7359,"Digital projects, as well as databases, which manage resources that are not part of Library Operations’ collecting responsibility (e.g., the UMLS, Visible Human, image library projects in LHC) are outside the scope of these requirements.",nlm.doc,Not_Req
+7360,Use of the OAIS Model to Develop the Requirements.,nlm.doc,Not_Req
+7361,"This document provides a high-level statement of the Library’s requirements, as known in December 2006. ",nlm.doc,Not_Req
+7362,The requirements are based upon the Reference Model for an Open Archival Information System (OAIS). ,nlm.doc,Not_Req
+7363,"The requirements are documented at a high level, and the rationale for any addition or modification to the detailed OAIS functions has been noted. ",nlm.doc,Not_Req
+7364,The level of detail of the requirements varies across functions in this document and is based on the group’s knowledge and understanding of needs at the time. ,nlm.doc,Not_Req
+7365,Future iterations of this document may contain additional requirements as they become known.,nlm.doc,Not_Req
+7366,Users of the NLM Digital Repository.,nlm.doc,Not_Req
+7367,"The users of the NLM Digital Repository include both end-users, such as the general Public and NIH staff, and NLM staff who will be working with and managing the content and repository system. ",nlm.doc,Not_Req
+7368,A crucial feature of a digital repository created and maintained by NLM will be providing the various access levels required by the different types of users. ,nlm.doc,Not_Req
+7369,NIH staff may need different access levels to some materials than the general public. ,nlm.doc,Not_Req
+7370,"NLM staff and system administrators will require access to the NLM Digital Repository in order to ingest, administer, manage, preserve and access objects and their supporting information and structures. ",nlm.doc,Not_Req
+7371,"This will require multiple levels of access to the materials. In addition, a primary goal of the NLM Repository is to provide access to the material as an active, regularly used archive, as opposed to a dark archive accessible only under certain exceptions.",nlm.doc,Not_Req
+7372,End-users will need to access and use the materials residing in the NLM Repository. ,nlm.doc,Not_Req
+7373,Both onsite access and Internet supported off-site access is needed for end-user access to the repository. ,nlm.doc,Not_Req
+7374,"End-users will be able to search metadata and full text within documents (when available), and view materials in formats readily available to a wide audience such as PDF, JPEG, and XML. ",nlm.doc,Not_Req
+7375,"However, some end-users may require different access rights to materials. ",nlm.doc,Not_Req
+7376,The 2 major end-user groups that have been identified are:,nlm.doc,Not_Req
+7377,"General public, including both United States users and international users. ",nlm.doc,Not_Req
+7378,"Public access to some materials may be restricted by licensing terms, embargo periods, copyright, etc. ",nlm.doc,Not_Req
+7379,"This level may be sub-divided into location level access when materials are only available via specific work stations or areas, such as the NLM Reading Room due to subscription or purchase requirements and licenses.",nlm.doc,Not_Req
+7380,There may even be instances where materials are available to U.S. citizens and not international users.,nlm.doc,Not_Req
+7381,"NIH staff, including NLM staff, which need to use the repository materials for research and reference. ",nlm.doc,Not_Req
+7382,"This level may be sub-divided into location level access when materials are only available via specific work stations or areas, such as the NLM Reading Room due to subscription or purchase requirements and licenses.",nlm.doc,Not_Req
+7383,A broad NLM staff level access is needed for NLM staff working with the repository and the objects in it. ,nlm.doc,Not_Req
+7384,The 2 identified NLM staff categories are:,nlm.doc,Not_Req
+7385,"Metadata Access, for staff creating, reviewing or editing appropriate metadata about the materials in the repository. ",nlm.doc,Not_Req
+7386,This level will allow NLM staff to view materials and add to or edit metadata without changing the object itself. ,nlm.doc,Not_Req
+7387,There should be multiple levels of access for viewing and editing of data based on varying operator and metadata classes.,nlm.doc,Not_Req
+7388,"Object Maintenance Access, a more restricted NLM staff level, available to staff working with the object itself: adding new files, checking the quality of digital files, manipulating images, performing format conversions and migrations (e.g., from tiff to pdf, tiff to jpeg2000, etc.), and investigating problems with the system.",nlm.doc,Not_Req
+7389,NLM System Administration/Programming Access.,nlm.doc,Not_Req
+7390,"The most restrictive NLM staff level providing ultimate rights to the system, required for its management, development, and assigning appropriate rights to users.",nlm.doc,Not_Req
+7391,The following chart of Operational Scenarios and User Classes (Figure 1) illustrates the various types of user interactions expected with the NLM Digital Repository. ,nlm.doc,Not_Req
+7392,Ingest Preparation which is listed in this chart is not a component of the OAIS model but has been included as a necessary function for the NLM Digital Repository. ,nlm.doc,Not_Req
+7393,Further information on ingest is listed in Section 7.1.,nlm.doc,Not_Req
+7394,Figure 1 NLM Operational Scenarios – Process and User Classes,nlm.doc,Not_Req
+7395,"Existing digital repositories for selected portions of the NLM Collection (e.g., PMC, Bookshelf, NIH Videocasts.",nlm.doc,Not_Req
+7396,"Lack of standards for file types (e.g., e-books).",nlm.doc,Not_Req
+7397,Materials found in NLM's special collections may require special consideration concerning the type of formats and data files that must be stored within the repository. Important donations of historical materials may include obsolete or unusual formats.,nlm.doc,Not_Req
+7398,Bibliographic data will be supplied by NLM’s Integrated Library System (ILS). ,nlm.doc,Not_Req
+7399,The repository should provide an interface to this data.,nlm.doc,Not_Req
+7400,Digital material held in the NLM Digital Repository will be a vital asset for NLM staff and the world. ,nlm.doc,Not_Req
+7401,It is therefore important that a suitable set of security controls and procedures is achieved. ,nlm.doc,Not_Req
+7402,NLM follows the HHS/NIH security standards.,nlm.doc,Not_Req
+7403,The Library will follow the HHS/NIH/OCCS security policies for the NLM Digital Repository.,nlm.doc,Not_Req
+7404,"The security framework must address functioning with the NIH off-site remote backup facility (NCCS), in both back up and parallel mode.",nlm.doc,Not_Req
+7405,Phasing: Evaluation and testing of selected commercial and open source software options is expected to occur prior to selection and implementation of a production repository.,nlm.doc,Not_Req
+7406,Budget: Budget costs are unknown until evaluation of software options is completed. ,nlm.doc,Not_Req
+7407,"Depending on the solution selected, funding may be needed for purchase of software and/or additional programming support.",nlm.doc,Not_Req
+7408,Staff resources: Lack of availability of Library Operations systems staff to work on digital repository testing and implementation.,nlm.doc,Not_Req
+7409,The NLM Digital Repository must be designed with regard to international best practice for digital archives/repositories.,nlm.doc,Not_Req
+7410,As new standards are developed NLM will need to review them for use by the repository.,nlm.doc,Not_Req
+7411,The following standards are mentioned in this document:,nlm.doc,Not_Req
+7412,A Glossary of Terms is provided as Appendix C.,nlm.doc,Not_Req
+7413,The following is a list of references used in developing this document.,nlm.doc,Not_Req
+7414,Association of Research Libraries. SPEC Kit 292: Institutional Repositories (2006),nlm.doc,Not_Req
+7415,"Coyle, Karen. Rights in the PREMIS Data Model: A Report for the Library of Congress (2006)",nlm.doc,Not_Req
+7416,Cornell University Library. Digital Preservation Management: Implementing Short-term Strategies for Long-term Problems (2004),nlm.doc,Not_Req
+7417,Data Dictionary for Preservation Metadata. Final Report of the PREMIS Working Group. (2005),nlm.doc,Not_Req
+7418,Electronic Resource Preservation and Access Network. ERPA Guidance: Ingest Strategy. (2004),nlm.doc,Not_Req
+7419,"McLeod, R. and Wheatley, P. and Ayris, P. Lifecycle information for e-literature: full report from the LIFE project. Research report. LIFE Project, London, UK. (2006) http://eprints.ucl.ac.uk/archive/00001854/",nlm.doc,Not_Req
+7420,National Digital Information Infrastructure and Preservation Program (NDIIP). Preserving Our Digital Heritage: Plan for the National Digital Information Infrastructure and Preservation Program (2002),nlm.doc,Not_Req
+7421,National Library of New Zealand. National Digital Heritage Archive Programme Business Requirements Specification (2005),nlm.doc,Not_Req
+7422,"NISO Framework Advisory Board. A Framework of Guidance for Building Good Digital Collections, 2nd ed. (2004)",nlm.doc,Not_Req
+7423,"Open Society Institute Guide to Institutional Repository Software, 3rd ed. (2004)",nlm.doc,Not_Req
+7424,Preservation Metadata and the OAIS Information Model: A Metadata Framework to Support the Preservation of Digital Objects. OCLC/RLG Working Group on Preservation Metadata (2002),nlm.doc,Not_Req
+7425,Preserving the Past to Protect the Future: The Strategic Plan of the National Archives and Records Administration 2006-2016 (2006),nlm.doc,Not_Req
+7426,Reference Model for an Open Archival Information System (OAIS) (2002) http://public.ccsds.org/publications/archive/650x0b1.pdf,nlm.doc,Not_Req
+7427,Technical Evaluation of Selected Open Source Repository Solutions in New Zealand (2006),nlm.doc,Not_Req
+7428,"United States. Government Printing Office. Future Digital System (FDsys) Requirements Document, version 2.0 (2006)",nlm.doc,Not_Req
+7429,The following assumptions have been identified by the Digital Repository Working Group as relevant to this Requirements Specification.,nlm.doc,Not_Req
+7430,The NLM Collection Development Policy defines the scope of the NLM Digital Repository.,nlm.doc,Not_Req
+7431,A primary goal of the conversion of content for the repository is the preservation of the content. ,nlm.doc,Not_Req
+7432,Priority will be given to preserving the intellectual content. ,nlm.doc,Not_Req
+7433,"The preservation of the original ""look and feel"" of the original source will be considered and reviewed on a case by case basis.",nlm.doc,Not_Req
+7434,NLM originals will be kept in the collection after digitization.,nlm.doc,Not_Req
+7435,"NLM will not provide or maintain special software required to access materials in the NLM Digital Repository (e.g., for audiovisuals or computer applications).",nlm.doc,Not_Req
+7436,The NLM Digital Repository will contain materials digitized by NLM and born-digital materials created or acquired by NLM.,nlm.doc,Not_Req
+7437,NLM will undertake a distributed custodial model for some digital materials. ,nlm.doc,Not_Req
+7438,"Not all digital objects will be stored in the NLM Digital Repository, but the metadata for those objects will be stored in an NLM-managed system, such as the Integrated Library System (ILS).",nlm.doc,Not_Req
+7439,"At a minimum, the original normalized object, the most recent migrated version and the next-to-the-last migrated version will be kept. ",nlm.doc,Not_Req
+7440,"Other intermediary versions may be discarded, and in some cases all versions may need to be retained.",nlm.doc,Not_Req
+7441,All digital objects must have an NLM unique internal identifier (UID).,nlm.doc,Not_Req
+7442,The system design and architecture should minimize duplicate data entry of any metadata for objects in the NLM Digital Repository.,nlm.doc,Not_Req
+7443,Master images and descriptive/structural/administrative metadata that meet NLM’s specifications are created for all digital content that is produced from NLM analog collections and intended for permanent retention.,nlm.doc,Not_Req
+7444,"The NLM Digital Repository will contain objects of varying levels of permanence, including ones that will not be permanently retained. ",nlm.doc,Not_Req
+7445,NLM will assign permanence ratings to objects stored in the NLM Digital Repository.,nlm.doc,Not_Req
+7446,"The Repository must support the use of multiple languages and non-Roman scripts for ingest, maintenance and access of digital objects and associated metadata.",nlm.doc,Not_Req
+7447,Web harvesting functionality is outside the scope of the Digital Repository requirements. ,nlm.doc,Not_Req
+7448,NLM expects to use separate software for web harvesting. ,nlm.doc,Not_Req
+7449,Harvested data/web pages will be stored in the repository.,nlm.doc,Not_Req
+7450,The NLM Digital Repository will not be a dark archive. ,nlm.doc,Not_Req
+7451,"Objects in the repository will be available for use, although access to specific objects may be restricted to on-site use or for a set period of time due to embargo.",nlm.doc,Not_Req
+7452,The Repository system must follow HHS/NIH standards concerning software and systems security.,nlm.doc,Not_Req
+7453,"To the extent possible, automation should be used for the extraction of descriptive and technical metadata.",nlm.doc,Not_Req
+7454,Collection Development Manual of the National Library of Medicine,nlm.doc,Not_Req
+7455,Existing Policies Related to the Digital Repository,nlm.doc,Not_Req
+7456,"The Collection Development Manual of the National Library of Medicine (CDM), fourth edition (2004), establishes boundaries for the Library's permanent collection and provides a conceptual and philosophical framework for the selection of biomedical materials. ",nlm.doc,Not_Req
+7457,It is intended primarily as a working document for NLM staff and defines the range of subjects to be acquired and the extent of the Library's collecting effort within these subjects.x,nlm.doc,Not_Req
+7458,It is intended primarily as a working document for NLM staff and defines the range of subjects to be acquired and the extent of the Library's collecting effort within these subjects. ,nlm.doc,Not_Req
+7459,It also addresses selection issues presented by a range of formats and literature types.,nlm.doc,Not_Req
+7460,The CDM is based on the Collection Development Policy adopted by the NLM Board of Regents in 1976 and amended in 1983 and 1992. ,nlm.doc,Not_Req
+7461,The NLM Board of Regents policy statement that “the National Library of Medicine has the responsibility for acquiring the biomedical literature in any format deemed appropriate to the fulfillment of its mission” provides the underpinning for following the CDM policies for selection of materials for the NLM Digital Repository (http://www.nlm.nih.gov/tsd/acquisitions/cdm/).,nlm.doc,Not_Req
+7462,National Library of Medicine Selection Criteria for Digital Reformatting,nlm.doc,Not_Req
+7463,The National Library of Medicine Selection Criteria for Digital Reformatting (http://nlm.nih.gov/psd/pcm/digitizationcriteria.pdf) sets the priorities for the selection of materials from NLM’s collection to be digitized both for access and for preservation. ,nlm.doc,Not_Req
+7464,"The goals of NLM’s digitization program are to increase access to its collections and provide wider use of its rich resources in the areas of medicine, health care and public health while preserving rare, valuable and fragile materials.",nlm.doc,Not_Req
+7465,"Selection of materials for digital reformatting is based on monetary, scholarly and historical value; bibliographic control; frequency of use; physical condition; the existence of digital copies elsewhere; copyright status; and the appropriateness of digital reproductions for use and access.",nlm.doc,Not_Req
+7466,"Because selection criteria for access are often different from those for preservation, the Library has created a different set of selection criteria for each mission. ",nlm.doc,Not_Req
+7467,"Each approach focuses on all types of materials in the Library’s collections including but not limited to printed monographs and journals, manuscripts and archives, prints and photographs, and audiovisuals.",nlm.doc,Not_Req
+7468,Permanence levels assigned to objects in the NLM Digital Repository should be based on the rating system developed by NLM to indicate to users which of its Web documents will be kept permanently available and whether the contents and identifiers of those documents could change over time. http://www.nlm.nih.gov/psd/pcm/devpermanence.html,nlm.doc,Not_Req
+7469,The Library will follow the HHS/NIH/OCCS security policies for the NLM Digital Repository.,nlm.doc,Not_Req
+7470,"The NLM Digital Repository will require more expansive, robust DTD encoding for textual materials than is currently available with the NLM Book and Historical Book DTDs. ",nlm.doc,Not_Req
+7471,The group recommends the use of the TEI DTD in addition to the NLM Book and NLM Historical Book DTDs for encoding certain text materials. A more detailed justification is included in the report accompanying these requirements.,nlm.doc,Not_Req
+7472,The NLM Metadata scheme should be reviewed to see if it meets current needs. ,nlm.doc,Not_Req
+7473,NLM has published an approved metadata schema based on Dublin Core (http://www.nlm.nih.gov/tsd/cataloging/metafilenew.html). ,nlm.doc,Not_Req
+7474,"The needs of the Repository may require a new schema or additional schemas, more congruent with the existing NLMCommon DTD and the NLMCatalogRecord DTD. (Available at http://www.nlm.nih.gov/bsd/licensee.html)",nlm.doc,Not_Req
+7475,A key area identified that will need policy development is migration strategies and methodologies. ,nlm.doc,Not_Req
+7476,"Digital preservation is a combination of storing objects in formats that can be migrated, recording appropriate metadata to be able to manage the objects, ongoing monitoring for bit and media degradation and technology obsolescence, and migrating the files to newer hardware and software environments as needed to ensure their continued availability. ",nlm.doc,Not_Req
+7477,"The preservation planning section of the functional requirements outlines the policy areas that need to be developed including monitoring changes in technology, evaluating the content in the archive, participating in standards development and developing migration plans, including goals, methods and schedules. ",nlm.doc,Not_Req
+7478,Policies will also be needed on the decision-making process about whether or when new repository standards will be adopted and when an object can be removed from the repository. ,nlm.doc,Not_Req
+7479,See Sections 7.4.4 and 7.5 for more details on specific policy areas.,nlm.doc,Not_Req
+7480,"Policy development will be needed regarding ingest into the repository, including which staff will be authorized to negotiate submission agreements, minimum requirements for content submitted by producers outside of NLM and maximum embargo periods.",nlm.doc,Not_Req
+7481,"The requirements in this section specify static and dynamic capacity for the number of users, connections, and other performance related factors. ",nlm.doc,Not_Req
+7482,"The performance requirements are divided into subsections and are provided in the form of design constraints, quality requirements, and system performance requirements.",nlm.doc,Not_Req
+7483,Design constraints apply existing rules or external conditions to the system. ,nlm.doc,Not_Req
+7484,"Examples of design constraints are communication standards, requirements for standardized hardware or software, and minimum needs for a system to be useful.",nlm.doc,Not_Req
+7485,"Organizational requirements deal with policies regarding external parties involved with the system, personnel roles, training, and security needs.",nlm.doc,Not_Req
+7486,"All documentation, software, and data related to this project are proprietary and copyrighted. ",nlm.doc,Not_Req
+7487,Use is governed by the contract requirements as defined in the U. S. Department of Transportation Federal Highway Administration Contract No. ,nlm.doc,Not_Req
+7488,DTFH61-05-C-00022. Unauthorized use of this documentation is a violation of law except as provided for in said contract.,nlm.doc,Not_Req
+7489,"The following table provides definitions of terms, acronyms, and abbreviations to assist interpretation of this document.",nlm.doc,Not_Req
+7490,CCTV - Closed Circuit Television.,nlm.doc,Not_Req
+7491,ConOps - Concept of Operations.,nlm.doc,Not_Req
+7492,DOT - Department of Transportation.,nlm.doc,Not_Req
+7493,DSS - Decision Support System.,nlm.doc,Not_Req
+7494,DST - Daylight Saving Time.,nlm.doc,Not_Req
+7495,"environmental data - In the Clarus context, includes all data defined in NTCIP 1204 (Ref. 8)..",nlm.doc,Not_Req
+7496,ESS - Environmental Sensor Station.,nlm.doc,Not_Req
+7497,FHWA - Federal Highway Administration.,nlm.doc,Not_Req
+7498,GPS - Global Positioning System.,nlm.doc,Not_Req
+7499,HTML - Hypertext Markup Language.,nlm.doc,Not_Req
+7500,ICC - (Clarus) Initiative Coordinating Committee.,nlm.doc,Not_Req
+7501,IEEE - Institute of Electrical and Electronic Engineers.,nlm.doc,Not_Req
+7502,"in situ - From Latin, “in situ” means “in place.” As applied to meteorological data, it refers to data specific to a (fixed) point of observation.",nlm.doc,Not_Req
+7503,ITE - Institute of Transportation Engineers.,nlm.doc,Not_Req
+7504,ITS - Intelligent Transportation System.,nlm.doc,Not_Req
+7505,ITS America - Intelligent Transportation Society of America.,nlm.doc,Not_Req
+7506,MADIS - Meteorological Assimilation Data Ingest System.,nlm.doc,Not_Req
+7507,MDSS - Maintenance Decision Support System.,nlm.doc,Not_Req
+7508,"metadataIn common information systems use, “metadata” is “data about data.” ",nlm.doc,Not_Req
+7509,"Within the meteorological community, this use has been extended to include data about objects related to weather observations.",nlm.doc,Not_Req
+7510,"For example, location data for an ESS becomes metadata for the observation data.",nlm.doc,Not_Req
+7511,NIST - National Institute of Standards and Technology.,nlm.doc,Not_Req
+7512,NOAA - National Oceanic and Atmospheric Administration.,nlm.doc,Not_Req
+7513,NTCIP - National Transportation Communications for ITS Protocol.,nlm.doc,Not_Req
+7514,NWS - National Weather Service.,nlm.doc,Not_Req
+7515,OCS - Oklahoma Climatological Survey.,nlm.doc,Not_Req
+7516,OMB - Office of Management and Budget.,nlm.doc,Not_Req
+7517,PMP - Project Management Plan.,nlm.doc,Not_Req
+7518,quality control - The operational activities and techniques required to ensure that quality requirements have been fulfilled.,nlm.doc,Not_Req
+7519,"quality flag - An indicator of the degree to which quality requirements have been fulfilled; in the Clarus context, an indicator of the reliability or usefulness of a data element or dataset.",nlm.doc,Not_Req
+7520,RWIS - Road Weather Information System.,nlm.doc,Not_Req
+7521,STWDSR - Surface Transportation Weather Decision Support Requirements.,nlm.doc,Not_Req
+7522,STWSP - Surface Transportation Weather Service Provider.,nlm.doc,Not_Req
+7523,TMDD - Traffic Management Data Dictionary.,nlm.doc,Not_Req
+7524,UTC - Coordinated Universal Time.,nlm.doc,Not_Req
+7525,VII - Vehicle Infrastructure Integration.,nlm.doc,Not_Req
+7526,WIST - Weather Information for Surface Transportation.,nlm.doc,Not_Req
+7527,“Pavement data” in this context includes surface and subsurface data specified in NTCIP 1204 (Ref. 8).,nlm.doc,Not_Req
+7528,The arrows in this diagram do not indicate data flows; they show the subject-object orientation of the relationship.,nlm.doc,Not_Req
+7529,“Pavement” in this context includes bridges.,nlm.doc,Not_Req
+7530,"Security considerations for the Clarus system fall under the guidance of Reference 14, OMB Circular No. A‑130, which, by its own definition, does not apply to “critical national security missions.”",nlm.doc,Not_Req
+7531, Future applications of Clarus may necessitate revisiting this classification.,nlm.doc,Not_Req

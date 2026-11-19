@@ -1,0 +1,119 @@
+,Requirement,Name of Doc,Req/Not Req
+999,"The Center shall provide the following link information: link identifier, link name, road number, link type, link type description, start node (see below for node information), end node (see below for node information), direction, length, capacity, speed limit, speed limit truck, number of lanes.",ctc-network.pdf,Req
+1000,"For each link defined within the Center: network identifier, link identifier, data type, data type description, delay, travel time, volume, speed, density, occupancy.",ctc-network.pdf,Req
+1001,"The Center shall support the following information about each incident: network identifier, incident ID, incident description, roadway, cross street, latitude/longitude, link identifier, direction, status, update Type, affected lanes, classification, severity, incident type, incident type description, road conditions, weather, confirmed date & time, cleared date & time.",ctc-network.pdf,Req
+1002,"The Center shall support the following information about each lane closure: network identifier, lane closure ID, closure description, starting roadway, starting cross street, latitude/longitude of starting location, ending roadway, ending cross street, latitude/longitude of ending location, direction of roadway, link identifier, current status, update type, affected lanes, lane closure source, contact, days closed, start time of day, end time of day, start date of series, end date of series.",ctc-network.pdf,Req
+1003,"The Center shall provide the following status information about each DMS: network identifier, DMS Identifier, DMS Name. Location (latitude/longitude), sign geometry (row/column), status (online/offline), current message (MULTI string). Beacons (on/off)",ctc-network.pdf,Req
+1004,"To support DMS control in other centers, the Center shall be able to support the following device control command for a DMS: network identifier, DMS identifier, username, password, beacons (on/off), immediate message (MULTI string).",ctc-network.pdf,Req
+1005,"The Center shall support the following status information about each LCS: network identifier, LCS identifier, LCS name, location (latitude/longitude), geometry (number of heads), head capabilities, status, current pattern.",ctc-network.pdf,Req
+1006,"To support LCS control in other centers, the Center shall be able to support the following device control command for a LCS: network Identifier, LCS identifier, username, password, signal pattern.",ctc-network.pdf,Req
+1007,"The Center shall provide the following information status information about each CCTV: network identifier, CCTV identifier, CCTV name, location (latitude/longitude), status (online/offline), locked/unlocked, lock holder (if locked), supported directions, current direction, current preset position, current pan, current tilt, current zoom, current focus, current ir.",ctc-network.pdf,Req
+1008,"To support CCTV control in other centers, the Center shall be able to support the following CCTV control request: network identifier, CCTV identifier, username, password, CCTV request.",ctc-network.pdf,Req
+1009,"To support video snapshots, the Center shall be able to support the following status information: network identifier, CCTV identifier, CCTV name, status, current camera direction, size of snapshot, video snapshot.",ctc-network.pdf,Req
+1010,"To support CCTV switching in other centers, the Center shall be able to support the following CCTV switching command: network identifier (owner of CCTV), username, password, video channel input identifier, video channel output identifier.",ctc-network.pdf,Req
+1011,"The Center shall support the following status information about each ramp meter: network identifier (owner of ramp meter)., Ramp Meter Identifier, Ramp Meter Name, location (latitude/longitude), status, status source, plan, cycle time.",ctc-network.pdf,Req
+1012,"To support Ramp Meter control in other centers, the Center shall be able to support the following device control command for a ramp meter: network identifier (owner of ramp meter), ramp meter identifier, username, password, plan, duration.",ctc-network.pdf,Req
+1013,"The Center shall support the following status information about each HAR: network identifier (owner of HAR), HAR Identifier, HAR name, location (latitude/longitude), status, current message, Current Message Text.",ctc-network.pdf,Req
+1014,"To support HAR control in other centers, the Center shall be able to support the following device control command for a HAR: network identifier (owner of HAR), HAR Identifier, username, password, message, message text, duration.",ctc-network.pdf,Req
+1015,"The Center shall support the following status information about each Traffic Signal: network identifier (owner of traffic signal), traffic signal identifier, traffic signal name, location (latitude/longitude), status, status source, state, failure state, plan, plan expiration, signal preemption.",ctc-network.pdf,Req
+1016,"To support Traffic Signal control in other centers, the Center shall be able to support the following device control command for a Traffic Signal: network identifier (owner of traffic signal), traffic signal identifier, username, password, traffic signal plan Identifier, duration.",ctc-network.pdf,Req
+1017,"The Center shall support the following status information about each ESS: network identifier (owner of sensor), environmental sensor identifier, environmental sensor name, type, location (latitude/longitude), satus, type, reading, units, alarm status.",ctc-network.pdf,Req
+1018,"The Center shall support the following status information about each HOV: network identifier (owner of HOV), HOV identifier, HOV name, Link Identifier, status, failure state, plan, state, status source, occupants, next rransition time.",ctc-network.pdf,Req
+1019,"To support HOV Lane control in other centers, the Center shall be able to support the following device control command for a HOV Lane: network identifier (owner of HOV), HOV lane identifier, username, password, Lane Plan, duration.",ctc-network.pdf,Req
+1020,"The Center shall support the following status information about each Parking Lot:  network identifier (owner of parking lot), parking lot identifier. parking lot name, location (latitude/longitude), status, capacit, utilization, entrance, restrictions, special capabilities.",ctc-network.pdf,Req
+1021,"The Center shall support the following status information about each School Zone: network identifier (owner of school zone), link identifier, school zone identifier, school zone name, location (latitude/longitude), status, failure status, state plan, state source.",ctc-network.pdf,Req
+1022,"To support School Zone control in other centers, the Center shall be able to support the following device control command for a School Zone: network identifier (owner of school zone), School Zone Identifier, Username, Password, Plan",ctc-network.pdf,Req
+1023,"The Center shall support the following status information about each Railroad Crossing: Network identifier (owner of railroad Crossing), Link Identifier, Rail Crossing Identifier, Rail Crossing Name, Location (latitude/longitude), Status, Rail Type, Estimated Time for Train to Clear of Intersection, Estimated Minutes to Train Arrival, Rail closing signal type.",ctc-network.pdf,Req
+1024,"The Center shall support the following status information about each Reversible Lane:  Network identifier (owner of reversible lane), Reversible Lane Identifier, Reversible Lane Name, Link Identifier, Indicator Status, Indicator Failure State, Plan, Direction, Direction Transition Time, Status Source.",ctc-network.pdf,Req
+1025,"To support Reversible Lane control in other centers, the Center shall be able to support the following device control command for a Reversible Lane: Network identifier (owner of reversible lane), Reversible Lane Identifier, Username, Password,  Plan, Duration.",ctc-network.pdf,Req
+1026,"The Center shall support the following status information about each Dynamic Lane: Network identifier (owner of dynamic lane), Link Identifier, Dynamic Lane Identifier, Dynamic Lane Name, Indicator Status, Failure State, Plan, Type, Transition Time.",ctc-network.pdf,Req
+1027,"To support Dynamic Lane control in other centers, the Center shall be able to support the following device control command for a Dynamic Lane: Network identifier (owner of dynamic lane), Dynamic Lane Identifier, Username, Password, Lane Plan, Duration.",ctc-network.pdf,Req
+1028,"The Center shall support the following status information about each Bus Stop: Network identifier (owner of bus stop), Link Identifier, Relative Link Location, Identifier, Name, Location (Node), Bus Routes, Frequency.",ctc-network.pdf,Req
+1029,"The Center shall support the following status information about each Bus Location: Network identifier (owner of bus), Link Identifier, Bus Identifier, Bus Name, Location (latitude/longitude), Schedule Adherence, Vehicle Attributes, Capacity.",ctc-network.pdf,Req
+1030,"The Center shall support the following status information about each Light/Commuter Stop: Network identifier (owner of stop), Link Identifier, Commuter / Light Rail Stop Identifier, Commuter / Light Rail Stop Name, Location, Routes, Frequency.",ctc-network.pdf,Req
+1031,"The Center shall support the following status information about each Light/Commuter Location: Network identifier (owner of train), Link Identifier, Commuter / Light Rail Identifier, Commuter / Light Rail Name, Location (latitude/location), Schedule Adherence, Vehicle Attributes, Capacity.",ctc-network.pdf,Req
+1032,"The Center shall support the following status information about each Park and Ride Lot: Network identifier (owner of lot), Park and Ride Lot Identifier, Park and Ride Lot Name, Location (latitude/location), Status, Capacity, Utilization, Entrance, Restrictions, Special Capabilities.",ctc-network.pdf,Req
+1033,"The Center shall support the following status information about each Vehicle Priority: Vehicle Identifier, Network identifier (owner of signal), Link Identifier, Intersection Identifier, Priority Request Status, Departure Time, Desired Arrival Time, Priority, Vehicle Classification, Service Strategy.",ctc-network.pdf,Req
+1034,"The Center shall support the following information about network device status: Network identifier, Number of DMSs, Number of LCSs, Number of CCTVs, Number of CCTV video inputs, Number of CCTV video outputs, Number of Ramp Meters, Number of HARs, Number of Traffic Signals, Number of ESSs, Number of HOVs, Number of Parking Lots, Number of School Zones, Number of Railroad Crossings, Number of Reversible Lanes, Number of Dynamic Lanes, DMS status data, LCS status data, CCTV status data, Video input channel identifiers, Video output channel identifiers, Ramp Meter status data, HAR status data, Traffic Signal status data, ESS status data, HOV status data, Parking Lot status data, School Zone status data, Railroad Crossing status data, Reversible Lane status data, Dynamic Lane status data.",ctc-network.pdf,Req
+1035,"The device status requestor and Center shall support the following information for command timeframe request: Network identifier, Device Type.",ctc-network.pdf,Req
+1036,"The device status requestor and Center shall support the following information for command timeframe request: Network identifier, Device Type, Days Commands Accepted, Times Commands Accepted.",ctc-network.pdf,Req
+1037,The Data Collector shall be designed to support the storage of TMDD data elements and message set information.,ctc-network.pdf,Req
+1038,The C2C Project shall utilize the TMDD standard (including message sets) to transmit information.,ctc-network.pdf,Req
+1039,DATEX/ASN shall be used to transmit the TMDD message sets.,ctc-network.pdf,Req
+1040,"TCP/IP shall be used to transmit the DATEX/ASN data,",ctc-network.pdf,Req
+1041,The map shall display interstates and state highways on the graphical map.,ctc-network.pdf,Req
+1042,The basemap data shall be derived from the North Central Texas Council of Governments (NCTCOG) Geo- Data warehouse.,ctc-network.pdf,Req
+1043,The map user shall be able to alter the current magnification (zoom level) of the map.,ctc-network.pdf,Req
+1044,"The map user shall be able to pan the map in each of the following directions: North, South, East or West.",ctc-network.pdf,Req
+1045,Each link displayed on the map shall be color coded to provide a graphical depiction of speeds. ,ctc-network.pdf,Req
+1046,A configuration file shall be provided to specify specific speed values. ,ctc-network.pdf,Req
+1047,The color coding shall be as follows: Green - speeds > TBD MPH. ,ctc-network.pdf,Req
+1048,Yellow - speeds between TBD and TBD MPH. Red – speeds below TBD MPH.,ctc-network.pdf,Req
+1049,The map shall display the current incidents (as icons) known to the C2C Project.,ctc-network.pdf,Req
+1050,The user shall be able to click on an incident icon to obtain further information about the incident.,ctc-network.pdf,Req
+1051,"All current incidents shall be displayed in tabular format with the following information contained in the table: Location, Type of incident (e.g., accident, lane closure), Severity of incident, Incident status, Travel direction, Effected lanes.",ctc-network.pdf,Req
+1052,"The map shall be capable of displaying the following for a DMS: Location, Current Message.",ctc-network.pdf,Req
+1053,"The map shall be capable of displaying the following for a LCS: Location, Current Signals.",ctc-network.pdf,Req
+1054,"The map shall be capable of displaying the following for a CCTV: Location, Status.",ctc-network.pdf,Req
+1055,"The remote Center Control GUI shall be designed to execute on a public network (e.g., Internet) and transmit equipment requests to the C-2-C software system.",ctc-network.pdf,Req
+1056,"When the GUI application is initiated, the user shall be prompted for the following information: Username, Password.",ctc-network.pdf,Req
+1057,The user shall be provided with the capability to select a network identifier for a device command/control request.,ctc-network.pdf,Req
+1058,"Once an Center is selected, the user shall be able to select a DMS from a list and provide the following information: Target DMS, Message to be displayed, Beacons On/Off.",ctc-network.pdf,Req
+1059,"Once an Center is selected, the user shall be able to select a LCS from a list and provide the following information: Target LCS, Assignment of lane arrows.",ctc-network.pdf,Req
+1060,"Once an Center is selected, the user shall be able to issue a CCTV switching command: Source (input), Destination port (output).",ctc-network.pdf,Req
+1061,"Once an Center is selected, the user shall be able to select a CCTV from a list and provide the following information: Target CCTV, Device control including, Pan, Tilt, Zoom.",ctc-network.pdf,Req
+1062,"Once an Center is selected, the user shall be able to select a Ramp Meter from a list and provide the following information: Target Ramp Meter, Plan.",ctc-network.pdf,Req
+1063,"Once an Center is selected, the user shall be able to select a HAR from a list and provide the following information: Target HAR, Text to be sent to the HAR.",ctc-network.pdf,Req
+1064,"Once an Center is selected, the user shall be able to select a Traffic Signal from a list and provide the following information: Target Traffic Signal, Plan.",ctc-network.pdf,Req
+1065,"Once an Center is selected, the user shall be able to select  a HOV from a list and provide the following information: Target HOV, Plan.",ctc-network.pdf,Req
+1066,"Once an Center is selected, the user shall be able to select a School Zone from a list and provide the following information: Target School Zone, Plan.",ctc-network.pdf,Req
+1067,"Once an Center is selected, the user shall be able to select a Reversible Lane from a list and provide the following information: Target Reversible Lane, Plan.",ctc-network.pdf,Req
+1068,"Once an Center is selected, the user shall be able to select a Dynamic Lane from a list and provide the following information: Target Dynamic Lane, Plan.",ctc-network.pdf,Req
+1069,The C2C Server shall execute in a Microsoft Windows NT environment,ctc-network.pdf,Req
+1070,A DATEX/ASN runtime library shall be available on any computer communicating to the C2C project.,ctc-network.pdf,Req
+1071,The web server application shall use ESRI's ARC Internet Map Server (ARC IMS) product for creating of map images.,ctc-network.pdf,Req
+1072,The C2C shall execute in a Microsoft Windows NT environment,ctc-network.pdf,Req
+1073,The C2C shall be implemented in the C/C++ programming language.,ctc-network.pdf,Req
+1074,The C2C web interface shall be implemented using C/C++ and ESRI ARC IMS.,ctc-network.pdf,Req
+1075,The Incident GUI shall be implemented using C/C++ and ESRI Map Objects.,ctc-network.pdf,Req
+1076,The Remote Control GUI shall be implemented using C/C++ and ESRI Map Objects.,ctc-network.pdf,Req
+1077,The C2C shall be able to operate in normal mode. ,ctc-network.pdf,Req
+1078,"In this mode the C2C receives data from all connected systems, including the Incident GUI, and combines the data into a single data store (database).",ctc-network.pdf,Req
+1079,The C2C shall be able to operate in test mode. ,ctc-network.pdf,Req
+1080,"In this mode, the C2C performs normal mode operations and also logs activities.",ctc-network.pdf,Req
+4879,Significantly modified the structure of the SRS .,ctc-network.pdf,Not_Req
+4880,Requirements from version 1.0 were reformatted to utilize the new structure.,ctc-network.pdf,Not_Req
+4881,Expanded the requirements for device status.,ctc-network.pdf,Not_Req
+4882,Added requirements for device command/control.,ctc-network.pdf,Not_Req
+4883,Added requirements for remote control user interface.,ctc-network.pdf,Not_Req
+4884,Revised to reflect changes from SICD and CICD version 2.3.,ctc-network.pdf,Not_Req
+4885,Incorporated input from DFW Regional Software Task Force into document. ,ctc-network.pdf,Not_Req
+4886,"Major new additions included: Ramp Meters Highway Advisory Radio (HAR), Traffic Signals Environmental Sensor Stations (ESS), High Occupancy Vehicle (HOV) Lanes, Parking Lots, School Zones, Railroad Crossings, Reversible Lanes, Dynamic Lanes, Transit.",ctc-network.pdf,Not_Req
+4887,This Software Requirements Specification (SRS) provides the requirements for the Center-to- Center Communications (C2C) Communications project.,ctc-network.pdf,Not_Req
+4888,This document describes the requirements for the Dallas/Ft. ,ctc-network.pdf,Not_Req
+4889,Worth (DFW) Regional “Center-to- Center (C2C) Communications Network” that is based on a Texas Department of Transportation (TxDOT) C2C project. ,ctc-network.pdf,Not_Req
+4890,The TxDOT C2c project initially connected the DFW TxDOT Traffic Management Centers (TMCs). ,ctc-network.pdf,Not_Req
+4891,This C2C infrastructure implements a repository for traffic data and provides a mechanism to exchange device control information between TMCs.,ctc-network.pdf,Not_Req
+4892,"The C2C project will be implemented using the evolving ITS Traffic Management Data Dictionary (TMDD) standard, the message sets associated with TMDD, other ITS Data Elements and Message Sets. ",ctc-network.pdf,Not_Req
+4893,The use of ITS standards will create a system that is reusable for other ITS application areas and will provide the State of Texas with a baseline system that can be cost effectively extended in the future.,ctc-network.pdf,Not_Req
+4894,The C2C infrastructure must interconnect several dissimilar traffic management systems.,ctc-network.pdf,Not_Req
+4895,"In order to create the C2C infrastructure, interfaces to the existing systems will be created. ",ctc-network.pdf,Not_Req
+4896,The data from these interfaces will communicate with the existing system in a “system specific” format. ,ctc-network.pdf,Not_Req
+4897,The data being deposited into the C2C infrastructure will be converted to a standard format (based on the ITS standards).,ctc-network.pdf,Not_Req
+4898,The C2C infrastructure is being created using a series of building blocks.,ctc-network.pdf,Not_Req
+4899,These building blocks allow the software to be utilized in a number of configurations (by simply altering the configuration parameters of the software).,ctc-network.pdf,Not_Req
+4900,"In a region such as Dallas/Ft. Worth, multiple instances of the building blocks will be utilized. ",ctc-network.pdf,Not_Req
+4901,The software is being designed so that multiple instances of a building block can be deployed by simply “configuring” the building block of operation within a specific agency. ,ctc-network.pdf,Not_Req
+4902,"Conceptually, the C2C infrastructure would be deployed as depicted in the following diagram:",ctc-network.pdf,Not_Req
+4903,Any data that is passed into the “cloud” in the above figure will be based on the ITS standards. ,ctc-network.pdf,Not_Req
+4904,Systems will interface to the “cloud” using a project defined protocol. ,ctc-network.pdf,Not_Req
+4905,New systems that are deployed (based on the ITS standards) will not utilize the project defined protocol but will be moved “into” the cloud (because they themselves would be based on the ITS standards.,ctc-network.pdf,Not_Req
+4906,The C2C project has the following goals:,ctc-network.pdf,Not_Req
+4907,To provide a common repository for traffic information for the DFW Metroplex.,ctc-network.pdf,Not_Req
+4908,To provide a World Wide Web based graphical map to display traffic conditions in the DFW Metroplex.,ctc-network.pdf,Not_Req
+4909,To provide a Microsoft Windows application that will allow agencies without a formal Traffic Management Center (TMC) to participate in the C2C infrastructure and information sharing.,ctc-network.pdf,Not_Req
+4910,"To provide a system which supports ITS center-to-center communications for command/control/status of various ITS field devices including: Dynamic Message Signs, Lane Control Signals and Closed Circuit Television Cameras (CCTVs), Ramp Meters, and Highway Advisory Radios (HARs).",ctc-network.pdf,Not_Req
+4911,To utilize National ITS standards to implement the project.,ctc-network.pdf,Not_Req
+4912,"To provide a software system that is extensible all local or regional partners. This would allow a “local” common repository to be created by “linking” individual partners, a “regional” common repository to be created by “linking” local common repositories and a “statewide” common repository to be created by “linking” regional common repositories.",ctc-network.pdf,Not_Req
+4913,Section 2 defines the requirements of the system. Acronyms are defined in Appendix A.,ctc-network.pdf,Not_Req
+4914,"• Concept Of Operations Framework For The Dallas/Ft. Worth Regional Center-to-Center Communications Network, Version 1.0, Southwest Research Institute, November 2001.",ctc-network.pdf,Not_Req
