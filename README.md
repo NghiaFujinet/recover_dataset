@@ -1,3 +1,37 @@
+# Requirements Engineering & BRD Dataset Repository (`recover_dataset`)
+
+Kho lưu trữ tổng hợp các bộ dữ liệu phục vụ bài toán **Trích xuất Yêu cầu Hệ thống & Phân loại `Req/Not_Req`, `FR/NFR` từ văn bản thô (BRD/SRS/Hội thoại)**.
+
+---
+
+## Tổng Quan & Phân Nhóm Dataset Theo Loại Ground Truth
+
+| Nhóm Ground Truth | Dataset / Tập con | Thư mục / File chính | Đầu vào thô (`Raw Input`) | Ground Truth hiện có | Quy mô thực tế | Lưu ý QA quan trọng |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **1. Có nhãn `FR / NFR` riêng** | **`nfr_locator`** *(8 văn xuôi)* | `nfr_locator/` (`NFRLocator_prose_8_docs.csv`) | `8` tài liệu văn xuôi `.txt` + `.pdf/.docx/.doc` (`01`–`08`) | `Not_Req`, `FR`, `NFR`, `FR+NFR`, `DB_Only` + 14 nhóm NFR con | **7.617 câu** (`5.280 Not_Req`, `964 FR`, `624 NFR`, `731 FR+NFR`, `18 DB_Only`) | Đã loại 3 file Excel RFP (`09`–`11`). `1.023` câu `Req` có `has_user_verified_true = 1`. `parsed_json/` vẫn giữ 11 file JSON gốc. |
+| **1. Có nhãn `FR / NFR` riêng** | **`recover`** *(End-to-End Delphi)* | `ground_truth/experts_final_requirements.csv` | `raw_conversation/example_conversation.txt` (`133` lượt lời) | `FR` / `NFR` | **28 câu** (`24 FR`, `4 NFR`) | Câu chuẩn hóa tổng hợp (không phải span nguyên văn); $N=1$ hội thoại. (`baselines/recover_requirements_FR_NFR.csv` là output LLM, không phải GT.) |
+| **2. Chỉ có `Req / Not_Req`** *(chưa tách FR/NFR)* | **`pure`** | `pure/` (`PURE_valid.csv`, `PURE_test.csv`, `PURE_train.csv`) | `7` file SRS thô trong `pure/raw/` (`1` valid + `6` test) | `Req` / `Not_Req` | `valid` **905** + `test` **1.534** = **2.439 câu** có raw (`train` 5.306 câu & `RFIs` 380 câu chưa có raw) | Chưa có nhãn `FR/NFR`; 7 file raw là SRS kỹ thuật; `train` (23 docs) thiếu file raw. |
+| **2. Chỉ có `Req / Not_Req`** *(chưa tách FR/NFR)* | **`recover`** *(Turn-level RQ1.1)* | `ground_truth/turn_level/RQ1.1_turn_classification_oracle.xlsx` | `raw_conversation/example_conversation.txt` (`133` lượt lời) | `Req` / `NonReq` (suy ra từ `prediction` + `manual check`) | **133 lượt lời** (`51 Req`, `82 NonReq`) | Map 100% về hội thoại gốc; chưa tách `FR/NFR`. |
+| **3. Chỉ có `User Story`** *(không có FR/NFR)* | **`inter2us_extended`** | `inter2us_extended/` (`public_system_desc/`, `data_annotation/`) | `int1.txt` (kịch bản 430 từ; `data_annotation/` không có transcript gốc) | User Stories + nhãn căn chỉnh `Coverage`/`Score` & tên tính năng tự do | `62` US người / `115` US tổng (`int1`); `50` cặp IAA; `39` US kèm tên chức năng | Không có nhãn `FR/NFR` hay `Req/Not_Req`. Giấy phép `MIT`. |
+| **3. Chỉ có `User Story`** *(không có FR/NFR)* | **`recover`** *(Task 5 — Inter2US)* | `ground_truth/user_stories/` | `raw_conversation/example_conversation.txt` | `37` User Stories + `180` cặp căn chỉnh (`Score` `0`/`1`) | `37` US, `180` cặp | Không có nhãn `FR/NFR`. |
+| **4. Chỉ có `BRD / SRS thô`** *(Unlabeled)* | **`raw_brd_unlabeled`** | `raw_brd_unlabeled/` | `6` file PDF toàn văn (`Doc-1`, `Doc-2`, `Doc-4`, `Doc-5`, `Doc-6`, `Doc-7`) | **Không có** (`0` file nhãn) | **292 trang / 56.232 từ** | `Doc-6` (MDOT, 47 tr) và `Doc-7` (GCC-Stat, 168 tr) là BRD thực tế rất tốt để tự gán nhãn. |
+
+### Chi tiết từng nhóm
+
+1. **Nhóm 1 — Có nhãn `FR / NFR` riêng:**
+   * **`nfr_locator/`** *(đã loại bỏ 3 file Excel RFP `09`, `10`, `11` khỏi `raw/` và `NFRLocator_by_doc/`) — Xem [nfr_locator/README.md](nfr_locator/README.md)*: Bộ dữ liệu chính có đầy đủ 2 tầng (`Req/Not_Req` và `FR/NFR/FR+NFR/DB_Only` + 14 nhóm NFR con) trên **8 tài liệu văn xuôi** (`NFRLocator_prose_8_docs.csv`, `7.617` câu: `3` SRS/User Guide + `5` văn bản pháp quy/DUA y tế). Lưu ý: thư mục `parsed_json/` vẫn còn giữ 11 file JSON gốc; chỉ `1.023` câu `Req` trên tập 8 doc có `has_user_verified_true = 1`.
+   * **`recover` (`experts_final_requirements.csv`)**: `28` yêu cầu chuẩn hóa qua Delphi (`24 FR`, `4 NFR`) trên cuộc phỏng vấn IFA (`133` lượt lời).
+2. **Nhóm 2 — Chỉ có nhãn `Req / Not_Req` (Requirement không thôi):**
+   * **`pure/`** *(xem [pure/README.md](pure/README.md))*: Có `2.439` câu gán nhãn `Req/Not_Req` khớp trực tiếp với `7` tài liệu SRS thô trong `pure/raw/` (`PURE_valid.csv` `905` câu + `PURE_test.csv` `1.534` câu). Tập `PURE_train.csv` (`5.306` câu, 23 docs) và `Final_dataset_RFIs.csv` (`380` câu) hiện chưa kèm file raw.
+   * **`recover` (`RQ1.1_turn_classification_oracle.xlsx`)**: `133` lượt lời hội thoại gán nhãn `Req` (`51`) / `NonReq` (`82`).
+3. **Nhóm 3 — Chỉ có `User Story` (và căn chỉnh, không có `FR/NFR`):**
+   * **`inter2us_extended/`** *(xem [inter2us_extended/README.md](inter2us_extended/README.md))*: Kịch bản mô tả hệ thống `int1.txt` (`430` từ) + `115` User Stories (`62` do người viết) + căn chỉnh `Coverage`/`Score`; kèm `data_annotation/` (`Inter_annotation_agreement_clean.csv` `50` cặp, `g01`, `g04`, `user_story_functionality_H.csv` `39` US kèm tên tính năng tự do).
+   * **`recover` (`ground_truth/user_stories/`)**: `37` User Stories và `180` cặp căn chỉnh trên hội thoại IFA.
+4. **Nhóm 4 — Chỉ có `BRD / SRS thô` (Unlabeled — không có ground truth):**
+   * **`raw_brd_unlabeled/`** *(xem [raw_brd_unlabeled/README.md](raw_brd_unlabeled/README.md))*: `6` file PDF toàn văn (`292` trang, `56.232` từ), gồm 2 BRD doanh nghiệp/chính phủ thực tế (`Doc-6` Maryland DOT CPMS, `Doc-7` GCC-Stat MARSA) và 4 tài liệu SRS/BRD học thuật/mẫu (`Doc-1`, `Doc-2`, `Doc-4`, `Doc-5`). Không có file nhãn ground truth.
+
+---
+
 # RECOVER Dataset: Conversational Requirements Elicitation Benchmark
 
 Bộ dữ liệu chuẩn (Benchmark Dataset) cho bài toán **Trích xuất Yêu cầu Hệ thống Tự động từ Hội thoại (Conversational Requirements Elicitation)**, được cấu trúc lại từ nghiên cứu **RECOVER** (*Requirements EliCitation frOm conVERsations*: *"RECOVER: Toward the Automatic Requirements Generation from Stakeholders’ Conversations"*).
@@ -10,16 +44,16 @@ Bộ dữ liệu chuẩn (Benchmark Dataset) cho bài toán **Trích xuất Yêu
 ## 1. Cấu trúc thư mục (`Directory Structure`)
 
 ```text
-Recover_dataset/
-├── README.md                                           # Tài liệu mô tả toàn bộ dataset & ánh xạ dữ liệu
+recover_dataset/
+├── README.md                                           # Tài liệu tổng hợp & ánh xạ dữ liệu toàn repo
 ├── raw_conversation/                                   # [INPUT RAW] Dữ liệu hội thoại đầu vào
-│   └── example_conversation.txt                        # Bản ghi cuộc phỏng vấn stakeholder (134 turns, ~40 phút)
+│   └── example_conversation.txt                        # Bản ghi cuộc phỏng vấn stakeholder (133 turns, ~40 phút)
 ├── ground_truth/                                       # [GROUND TRUTH / ORACLES] Nhãn chuẩn do chuyên gia tạo
 │   ├── experts_final_requirements.txt                  # 28 câu requirements chuẩn (Delphi consensus) dạng plain text
 │   ├── experts_final_requirements.csv                  # 28 câu requirements chuẩn kèm nhãn FR/NFR, nhóm & timestamp gốc
 │   ├── experts_individual/                             # Kết quả trích xuất độc lập của 3 chuyên gia trước khi gộp
 │   │   ├── expert_1_requirements.txt                   # 104 câu requirements của Chuyên gia 1 (mức chi tiết cao)
-│   │   ├── expert_2_requirements.txt                   # 36 câu requirements của Chuyên gia 2 (mức trung bình)
+│   │   ├── expert_2_requirements.txt                   # 35 câu requirements của Chuyên gia 2 (mức trung bình)
 │   │   ├── expert_3_requirements.txt                   # 17 câu requirements của Chuyên gia 3 (mức khái quát)
 │   │   └── experts_delphi_execution.xlsx               # Bảng đối chiếu & gộp Delphi (Initial Set 40 câu -> Final Set 28 câu)
 │   ├── turn_level/                                     # Ground truth ở cấp độ từng lượt lời (Turn-level Oracles)
@@ -35,8 +69,12 @@ Recover_dataset/
 │   ├── recover_requirements_FR_NFR.csv                 # 135 câu của RECOVER kèm nhãn kiểm tra FR/NFR & Hallucination
 │   ├── Step3_Results_Formatted.xlsx                    # File Excel gốc phân tích FR/NFR trên 135 câu của RECOVER
 │   └── llm_only_requirements.txt                       # 31 câu requirements khi đưa thẳng toàn bộ hội thoại vào LLM
-└── evaluation/                                         # [EVALUATION] Script đánh giá tự động
-    └── RQ2_results_evaluation.ipynb                    # Notebook tính điểm BLEU, ROUGE-1, METEOR giữa Output và Ground Truth
+├── evaluation/                                         # [EVALUATION] Script đánh giá tự động
+│   └── RQ2_results_evaluation.ipynb                    # Notebook tính điểm BLEU, ROUGE-1, METEOR giữa Output và Ground Truth
+├── nfr_locator/                                        # [NHÓM 1: FR/NFR] 8 tài liệu văn xuôi thô + nhãn Req/FR/NFR/14 lớp NFR
+├── pure/                                               # [NHÓM 2: Req/Not_Req] 7 SRS thô (valid+test) + PURE train/valid/test CSV
+├── inter2us_extended/                                  # [NHÓM 3: User Story] Kịch bản int1.txt + User Stories + IAA alignment
+└── raw_brd_unlabeled/                                  # [NHÓM 4: BRD Thô Unlabeled] 6 tài liệu BRD/SRS PDF toàn văn (chưa có nhãn)
 ```
 
 ---
@@ -47,7 +85,7 @@ Tùy vào mục tiêu thực nghiệm, bạn chọn cặp **Input Raw $\rightarr
 
 | Bài toán (Task) | Input Raw | Ground Truth (Oracle) | Baseline để so sánh |
 | :--- | :--- | :--- | :--- |
-| **Task 1: End-to-End Conversational RE**<br>*(Trích xuất danh sách requirements từ toàn bộ cuộc hội thoại)* | `raw_conversation/example_conversation.txt`<br>*(134 lượt lời có timestamp & speaker)* | `ground_truth/experts_final_requirements.txt`<br>hoặc `ground_truth/experts_final_requirements.csv`<br>*(28 requirements đồng thuận qua Delphi)* | • `baselines/recover_requirements.txt` (135 câu)<br>• `baselines/llm_only_requirements.txt` (31 câu) |
+| **Task 1: End-to-End Conversational RE**<br>*(Trích xuất danh sách requirements từ toàn bộ cuộc hội thoại)* | `raw_conversation/example_conversation.txt`<br>*(133 lượt lời có timestamp & speaker)* | `ground_truth/experts_final_requirements.txt`<br>hoặc `ground_truth/experts_final_requirements.csv`<br>*(28 requirements đồng thuận qua Delphi)* | • `baselines/recover_requirements.txt` (135 câu)<br>• `baselines/llm_only_requirements.txt` (31 câu) |
 | **Task 2: Turn-Level Requirement Identification**<br>*(Phân loại lượt lời nào có chứa thông tin yêu cầu: `Req` vs `NonReq`)* | Cột `sentence` (133 turns) trong<br>`ground_truth/turn_level/RQ1.1_turn_classification_oracle.xlsx` | Suy ra từ cột `prediction` + `manual check`:<br>• **True `Req` (51 turns)**: `tp` (39) + `fn` (12)<br>• **True `NonReq` (82 turns)**: `tn` (59) + `fp` (23) | Cột `prediction` (`62 Req`, `71 NonReq`) của mô hình `FastText + SVC` |
 | **Task 3: Turn-Level Requirement Generation**<br>*(Sinh câu requirement từ từng đoạn trích hội thoại)* | Cột `Turns` (57 đoạn trích) trong<br>`ground_truth/turn_level/RQ1.2_turn_requirements_oracle.xlsx` | Các cột `Answer 1`, `Answer 2`, `Answer 3`, `Answer 4` *(do 4 chuyên gia độc lập viết cho mỗi turn)* | Cột `LLM requirements` trong cùng file Excel |
 | **Task 4: FR vs. NFR Classification & Groundedness**<br>*(Phân loại yêu cầu Chức năng `FR` và Phi chức năng `NFR`)* | • 28 câu chuẩn: `ground_truth/experts_final_requirements.csv`<br>• 135 câu máy sinh: `baselines/recover_requirements_FR_NFR.csv` | • Cột `label` (`24 FR`, `4 NFR`) trong `experts_final_requirements.csv`<br>• Cột `label` (`119 FR`, `16 NFR` — gồm `11` NFR có thật trong hội thoại & `5` NFR do LLM tự suy diễn) trong `recover_requirements_FR_NFR.csv` | Kết quả phân tích trong `baselines/Step3_Results_Formatted.xlsx` |
@@ -74,7 +112,7 @@ Tùy vào mục tiêu thực nghiệm, bạn chọn cặp **Input Raw $\rightarr
 Bộ 28 câu trong `ground_truth/experts_final_requirements.txt` (và `.csv`) được tạo qua **Phương pháp Delphi 2 vòng**:
 1. **Vòng 1 (Độc lập)**: 3 chuyên gia phần mềm đọc `example_conversation.txt` và trích xuất độc lập:
    * `expert_1_requirements.txt`: **104 câu** (tách nhỏ từng chi tiết theo thứ tự thời gian hội thoại).
-   * `expert_2_requirements.txt`: **36 câu** (gom theo nhóm chức năng).
+   * `expert_2_requirements.txt`: **35 câu** (gom theo nhóm chức năng).
    * `expert_3_requirements.txt`: **17 câu** (tổng hợp mức cao).
 2. **Vòng 2 (Đối chiếu & Đồng thuận trong `experts_delphi_execution.xlsx`)**:
    * Sheet `Initial Set` ánh xạ 40 yêu cầu ứng viên với số thứ tự câu của từng chuyên gia (`Expert 1`, `Expert 2`, `Expert 3`).
