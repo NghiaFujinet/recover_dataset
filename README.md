@@ -47,10 +47,22 @@ Bộ dữ liệu chuẩn (Benchmark Dataset) cho bài toán **Trích xuất Yêu
 recover_dataset/
 ├── README.md                                           # Tài liệu tổng hợp & ánh xạ dữ liệu toàn repo
 ├── raw_conversation/                                   # [INPUT RAW] Dữ liệu hội thoại đầu vào
-│   └── example_conversation.txt                        # Bản ghi cuộc phỏng vấn stakeholder (133 turns, ~40 phút)
+│   ├── example_conversation.txt                        # Bản ghi cuộc phỏng vấn stakeholder gốc (133 turns, ~40 phút)
+│   ├── example_conversation_conflict_v1_thap.txt       # Biến thể conflict mật độ thấp (142 turns: 6 lỗi thật + 3 decoy)
+│   ├── example_conversation_conflict_v2_vua.txt        # Biến thể conflict mật độ vừa (148 turns: 11 lỗi thật + 4 decoy)
+│   └── example_conversation_conflict_v3_cao.txt        # Biến thể conflict mật độ cao (155 turns: 17 lỗi thật đủ 16/16 mã + 6 decoy)
 ├── ground_truth/                                       # [GROUND TRUTH / ORACLES] Nhãn chuẩn do chuyên gia tạo
 │   ├── experts_final_requirements.txt                  # 28 câu requirements chuẩn (Delphi consensus) dạng plain text
 │   ├── experts_final_requirements.csv                  # 28 câu requirements chuẩn kèm nhãn FR/NFR, nhóm & timestamp gốc
+│   ├── conflict_variants/                              # Ground truth & tài liệu chỉ rõ conflict cần bắt cho 3 biến thể v1/v2/v3
+│   │   ├── README.md                                   # Danh sách chi tiết từng conflict phải bắt & decoy không được báo nhầm
+│   │   ├── v1_thap_requirements_gt.csv                 # 28 requirements GT cho v1_thap (cập nhật DOI_Y / LIEN_QUAN_XUNG_DOT)
+│   │   ├── v1_thap_conflicts_gt.csv                    # 6 conflict thật + 3 decoy của v1_thap (kèm acceptable_loai & timestamp)
+│   │   ├── v2_vua_requirements_gt.csv                  # 28 requirements GT cho v2_vua
+│   │   ├── v2_vua_conflicts_gt.csv                     # 11 conflict thật + 4 decoy của v2_vua
+│   │   ├── v3_cao_requirements_gt.csv                  # 28 requirements GT cho v3_cao
+│   │   ├── v3_cao_conflicts_gt.csv                     # 17 conflict thật + 6 decoy của v3_cao
+│   │   └── preexisting_conflicts.csv                   # 10 mâu thuẫn/nhiễu có sẵn trong bản gốc (PRE01-PRE10)
 │   ├── experts_individual/                             # Kết quả trích xuất độc lập của 3 chuyên gia trước khi gộp
 │   │   ├── expert_1_requirements.txt                   # 104 câu requirements của Chuyên gia 1 (mức chi tiết cao)
 │   │   ├── expert_2_requirements.txt                   # 35 câu requirements của Chuyên gia 2 (mức trung bình)
@@ -70,7 +82,8 @@ recover_dataset/
 │   ├── Step3_Results_Formatted.xlsx                    # File Excel gốc phân tích FR/NFR trên 135 câu của RECOVER
 │   └── llm_only_requirements.txt                       # 31 câu requirements khi đưa thẳng toàn bộ hội thoại vào LLM
 ├── evaluation/                                         # [EVALUATION] Script đánh giá tự động
-│   └── RQ2_results_evaluation.ipynb                    # Notebook tính điểm BLEU, ROUGE-1, METEOR giữa Output và Ground Truth
+│   ├── RQ2_results_evaluation.ipynb                    # Notebook tính điểm BLEU, ROUGE-1, METEOR giữa Output và Ground Truth
+│   └── eval_conflicts.py                               # CLI kiểm tra toàn vẹn (--check) & chấm điểm conflict (--pred) cho v1/v2/v3
 ├── nfr_locator/                                        # [NHÓM 1: FR/NFR] 8 tài liệu văn xuôi thô + nhãn Req/FR/NFR/14 lớp NFR
 ├── pure/                                               # [NHÓM 2: Req/Not_Req] 7 SRS thô (valid+test) + PURE train/valid/test CSV
 ├── inter2us_extended/                                  # [NHÓM 3: User Story] Kịch bản int1.txt + User Stories + IAA alignment
